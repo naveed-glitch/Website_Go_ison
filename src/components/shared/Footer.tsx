@@ -1,6 +1,7 @@
 
 
 import { FaInstagram, FaTwitter, FaFacebook, FaLinkedin } from "react-icons/fa";
+import Logo from '../../assets/images/go_ison_logo.jpg'
 
 export default function Footer() {
   return (
@@ -9,11 +10,11 @@ export default function Footer() {
         {/* Logo & Description */}
         <div className="flex-1 min-w-[200px]">
           <div className="flex items-center gap-2 mb-2">
-            <img src="/logo.svg" alt="YourLogo" className="h-8 w-8" />
-            <span className="font-bold text-xl">TalentMatch</span>
+            <img src={Logo} alt="YourLogo" className="h-8 w-8" />
+            <span className="font-bold text-xl">Go Ison</span>
           </div>
           <p className="text-sm text-blue-100">
-            TalentMatch connects companies with top talent. Your trusted partner for recruitment and staffing solutions.
+            Go Ison connects companies with top talent. Your trusted partner for recruitment and staffing solutions.
           </p>
         </div>
 
@@ -23,7 +24,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center mt-8 border-t border-blue-800 pt-4">
         <span className="text-xs text-blue-200">
-          © {new Date().getFullYear()} TalentMatch. All rights reserved.
+          © {new Date().getFullYear()} Go Ison. All rights reserved.
         </span>
         <div className="flex gap-4 mt-2 md:mt-0">
           <a href="https://instagram.com" aria-label="Instagram" className="hover:text-blue-400"><FaInstagram /></a>

@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              Connecting you with the right experts is our priority. Let's bring your vision to life.
+              Your hiring goals are our priority. Let’s connect and discuss how we can deliver the right talent for your business success.
             </motion.p>
             
             <motion.div
@@ -148,7 +148,7 @@ const Contact: React.FC = () => {
       </div>
 
       {/* Testimonials Section */}
-  <TestimonialSection/>
+  {/* <TestimonialSection/> */}
 
  
 
@@ -158,7 +158,7 @@ const Contact: React.FC = () => {
       {/* Map Section */}
       <MapSection />
         {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-900 to-slate-900 text-white">
+      {/* <section className="py-20 bg-gradient-to-r from-blue-900 to-slate-900 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -181,7 +181,7 @@ const Contact: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
      
     </div>

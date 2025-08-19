@@ -12,24 +12,24 @@ const OurStorySection = () => {
   
   const timeline = [
     {
-      year: "2001",
+      year: "2024",
       title: "The Beginning",
-      description: "Born from the idea that staffing could be less about financial gain and corporate in-roads, and more about genuine relationships and meaningful impact."
+      description: "Founded with a vision to make staffing about genuine partnerships and meaningful impact."
     },
     {
-      year: "2005",
-      title: "First Milestone",
-      description: "Expanded to multiple cities across the United States, establishing a national presence."
+      year: "2025",
+      title: "Building Trust",
+      description: "Formed strong relationships across industries, delivering tailored workforce solutions to clients."
     },
     {
-      year: "2012",
-      title: "Going Global",
-      description: "Opened our first international office, marking the beginning of our global expansion."
+      year: "2026",
+      title: "Expanding Horizons",
+      description: "Stepped into international markets, extending our reach and capabilities globally."
     },
     {
-      year: "2023",
+      year: "2025",
       title: "Today",
-      description: "A purpose-driven company dedicated to empowering people through the value of opportunity."
+      description: "A purpose-driven company committed to empowering businesses and professionals through innovation and opportunity."
     }
   ];
 
@@ -55,8 +55,9 @@ const OurStorySection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              We've always done things differently. Born from the idea that staffing could be less about 
-              financial gain and corporate in-roads, and more about genuine relationships and meaningful impact.
+              At Go Ison, we’ve always believed staffing should be about more than filling positions—it should be about building meaningful relationships and driving lasting impact.
+
+Our journey began with a simple vision: to connect businesses with the right talent in a smarter, more innovative way. From those early steps to our growing global presence today, one thing has never changed—our commitment to people, progress, and partnerships.
             </motion.p>
           </div>
         </div>

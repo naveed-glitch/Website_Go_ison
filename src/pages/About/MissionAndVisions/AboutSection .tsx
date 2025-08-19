@@ -34,13 +34,13 @@ const AboutSection: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              About Talent Bridge IT Staffing
+              About Go Ison IT Staffing
             </h2>
             <p className="text-gray-700 text-lg mb-6">
-              Talent Bridge specializes in providing top-tier IT staffing solutions across North America and India. We connect leading tech companies with skilled IT professionals to drive innovation and growth.
+              At Go Ison, we specialize in delivering tailored IT staffing solutions across the U.S. and beyond. We connect businesses with skilled technology professionals who drive innovation, efficiency, and growth.
             </p>
             <p className="text-gray-700 text-lg mb-8">
-              Our expertise spans software development, cloud computing, cybersecurity, data science, and more. We partner with startups to Fortune 500 companies, ensuring tailored staffing solutions to meet dynamic industry needs.
+              Our expertise covers software development, cloud computing, cybersecurity, data science, and more. Whether supporting startups or Fortune 500 enterprises, we provide flexible, high-quality staffing solutions designed to meet evolving business needs.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="flex items-center">
@@ -50,8 +50,8 @@ const AboutSection: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xl font-bold text-gray-900">30+</p>
-                  <p className="text-gray-600">IT Hubs Worldwide</p>
+                  <p className="text-xl font-bold text-gray-900">2+ Offices</p>
+                  <p className="text-gray-600">Strategically established to serve clients better.</p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -61,8 +61,8 @@ const AboutSection: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xl font-bold text-gray-900">100+</p>
-                  <p className="text-gray-600">Tech Clients Served</p>
+                  <p className="text-xl font-bold text-gray-900">10+ Clients</p>
+                  <p className="text-gray-600">Trusted businesses already partnering with us.</p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -72,8 +72,8 @@ const AboutSection: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xl font-bold text-gray-900">1500+</p>
-                  <p className="text-gray-600">IT Placements Completed</p>
+                  <p className="text-xl font-bold text-gray-900">50+ Placements</p>
+                  <p className="text-gray-600">Skilled professionals matched with the right opportunities.</p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -83,8 +83,8 @@ const AboutSection: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xl font-bold text-gray-900">250+</p>
-                  <p className="text-gray-600">Certified IT Recruiters</p>
+                  <p className="text-xl font-bold text-gray-900">95% Client Satisfaction</p>
+                  <p className="text-gray-600">A strong start built on quality and trust.</p>
                 </div>
               </div>
             </div>

@@ -10,8 +10,8 @@ function WhoWeAre() {
   return (
     <div className="font-sans">
       <HeroSection/>
-      <ParticleTextSection />
-      <FullScreenCarousel />
+      {/* <ParticleTextSection /> */}
+      {/* <FullScreenCarousel /> */}
       <OurStorySection/>
       <SharedValuesSection />
       <OurPurposeSection/>

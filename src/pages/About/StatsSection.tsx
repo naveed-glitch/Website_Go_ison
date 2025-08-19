@@ -4,10 +4,10 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const stats = [
-  { value: 18, label: 'Years in Business', suffix: 'yrs' },
-  { value: 6000, label: 'Agents Worldwide', suffix: '+' },
-  { value: 400, label: 'Annual Turnover', suffix: 'M' },
-  { value: 6, label: 'BSP Locations', suffix: '' },
+  { value: 1, label: ' Building a foundation of trust and client success..', suffix: '+ year' },
+  { value:100, label: ' In our growing talent network across industries.', suffix: '+ Professionals' },
+  { value: 50, label: 'Delivering tailored staffing solutions to diverse businesses.', suffix: '+ Clients Served' },
+  { value: 3, label: ' Strategically positioned to support clients with global ambitions.', suffix: ' Locations' },
 ];
 
 const StatsSection: React.FC = () => {
@@ -55,7 +55,7 @@ const StatsSection: React.FC = () => {
               className="text-center"
               variants={item}
             >
-              <div className="text-5xl md:text-6xl font-bold mb-2">
+              <div className="text-3xl font-bold mb-2">
                 <Counter from={0} to={stat.value} />{stat.suffix}
               </div>
               <div className="text-blue-200 text-lg">{stat.label}</div>

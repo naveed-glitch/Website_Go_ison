@@ -19,7 +19,7 @@ const ContactForm: React.FC = () => {
             type="text" 
             id="name" 
             className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-            placeholder="Your name"
+            placeholder="Your Full name"
           />
         </div>
         
@@ -40,7 +40,7 @@ const ContactForm: React.FC = () => {
             className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
           >
             <option>General Inquiry</option>
-            <option>Sales</option>
+            <option>Hiring Needs</option>
             <option>Support</option>
             <option>Partnership</option>
           </select>

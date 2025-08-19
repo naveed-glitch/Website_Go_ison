@@ -20,8 +20,6 @@ const CTASection = () => {
   const [typingSpeed, setTypingSpeed] = useState(150);
 
   const messages = [
-    "Need Help Growing?",
-    "Looking for Talent?",
     "Need Staffing Solutions?",
   ];
 
@@ -62,9 +60,9 @@ const CTASection = () => {
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-5xl font-bold text-gray-800 mb-4"
           >
-            Connecting <span className="text-blue-600">Top Talent</span> with
+            Your <span className="text-blue-600">Trusted Partner</span> in
             <br />
-            <span className="text-blue-600">Leading Companies</span>
+            <span className="text-blue-600">Recruitment Success</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -72,8 +70,7 @@ const CTASection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-gray-600 max-w-2xl mx-auto text-lg"
           >
-            We specialize in matching skilled professionals with businesses that
-            need their expertise. Let us help you grow.
+            We connect businesses with skilled professionals who drive results. Share your staffing needs, and we’ll deliver the right talent—fast.
           </motion.p>
         </div>
 
@@ -88,7 +85,7 @@ const CTASection = () => {
                   <span className="inline-block w-1 h-8 bg-blue-600 ml-1 animate-pulse"></span>
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  Fill out the form and we'll connect you with the right talent.
+                  Fill out the form and let’s start building your workforce today.
                 </p>
 
                 <form className="space-y-6">
@@ -166,7 +163,7 @@ const CTASection = () => {
                       <h4 className="font-semibold text-blue-100">
                         EMAIL ADDRESS
                       </h4>
-                      <p className="mt-1">info@talentbridge.com</p>
+                      <p className="mt-1">naveed@goison.com</p>
                     </div>
                   </div>
 
@@ -187,7 +184,7 @@ const CTASection = () => {
                     <div>
                       <h4 className="font-semibold text-blue-100">ADDRESS</h4>
                       <p className="mt-1">
-                        Talent Bridge LLC
+                        Go Ison LLC
                         <br />
                         2908 Jerrie Lane
                         <br />

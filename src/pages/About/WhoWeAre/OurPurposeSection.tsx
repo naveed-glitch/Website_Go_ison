@@ -21,8 +21,7 @@ const OurPurposeSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            "Our purpose is to develop our people personally, professionally, and financially, 
-            so they can be the light to the world around them"
+            "Our purpose is to empower people—personally, professionally, and financially—so they can create meaningful impact in the world around them."
           </motion.blockquote>
           
           <motion.div
@@ -33,12 +32,10 @@ const OurPurposeSection = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
           >
             <p className="mb-4">
-              — Best Bean, CEO
+              — Naveed Haq, CEO
             </p>
             <p>
-              We believe that if we can develop our people to become the best version of themselves, 
-              then they will turn around and take care of our customers, our consultants, and our 
-              candidates in ways that far exceed any expectations.
+              We believe that when people are supported to grow and thrive, they bring their best selves to work. At Go Ison, this means our clients, consultants, and candidates benefit from a level of dedication and performance that goes beyond expectations.
             </p>
           </motion.div>
         </motion.div>
@@ -47,18 +44,18 @@ const OurPurposeSection = () => {
           {[
             { 
               title: "Personally", 
-              description: "Fostering personal growth and well-being through mentorship and support systems.",
-              color: "bg-cyan-100"
-            },
-            { 
-              title: "Professionally", 
-              description: "Providing continuous learning opportunities and career advancement paths.",
+              description: "Encouraging personal growth and well-being through mentorship, guidance, and support systems.",
               color: "bg-blue-100"
             },
             { 
+              title: "Professionally", 
+              description: "Creating continuous learning opportunities and clear career advancement pathways.",
+              color: "bg-blue-200"
+            },
+            { 
               title: "Financially", 
-              description: "Ensuring competitive compensation and financial security for our team members.",
-              color: "bg-indigo-100"
+              description: "Providing competitive compensation and long-term financial stability for our team and partners.",
+              color: "bg-blue-300"
             }
           ].map((item, index) => (
             <motion.div

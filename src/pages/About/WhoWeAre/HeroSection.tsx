@@ -41,7 +41,7 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
-          We're A Company That <br />
+          We’re a Company That <br />
           <motion.span 
             className="text-cyan-300"
             animate={{ 
@@ -56,7 +56,7 @@ const HeroSection = () => {
               repeat: Infinity 
             }}
           >
-            Cares For Others
+            Puts People First
           </motion.span>
         </motion.h1>
         
@@ -66,8 +66,7 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          Insight Global isn't just a staffing company. We're a company that cares for others. 
-          It might sound lofty, but it's the idea that gets us up every day, determined to make it true.
+          Go Ison isn’t just a staffing firm—we’re a partner who truly cares about the success of our clients and the professionals we connect. It may sound ambitious, but it’s the belief that inspires us every day to deliver meaningful, lasting impact.
         </motion.p>
         
         <motion.button 

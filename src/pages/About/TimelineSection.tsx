@@ -4,29 +4,29 @@ import { useInView } from 'react-intersection-observer';
 
 const timelineData = [
   {
-    year: '2016',
-    title: 'Founding Year',
-    description: 'Launched with a mission to connect top IT talent with leading organizations.'
+    year: '2024',
+    title: 'Our Beginning',
+    description: 'Launched with a mission to deliver client-focused staffing solutions tailored to modern business needs.'
   },
   {
-    year: '2018',
-    title: 'Expanding Reach',
-    description: 'Partnered with Fortune 500 companies, expanding our client base nationwide.'
+    year: '2024',
+    title: 'First Partnerships',
+    description: 'Started building trusted relationships with startups and growing enterprises across industries.'
   },
   {
-    year: '2020',
-    title: 'Innovation in Hiring',
-    description: 'Introduced AI-driven candidate matching to streamline recruitment processes.'
+    year: '2025',
+    title: 'Expanding Network',
+    description: 'Growing our talent pool and client base to provide faster, more reliable recruitment services.'
   },
   {
-    year: '2021',
-    title: 'Global Recognition',
-    description: 'Awarded for excellence in IT staffing solutions and client satisfaction.'
+    year: '2025',
+    title: 'Technology Integration',
+    description: 'Introducing AI-driven tools to streamline hiring and improve candidate matching.'
   },
   {
-    year: '2023',
-    title: 'Future-Focused Solutions',
-    description: 'Launched workforce management tools to meet evolving client needs.'
+    year: '2027',
+    title: 'Global Outlook',
+    description: 'Committed to scaling our presence and becoming a trusted partner for businesses worldwide.'
   }
 ];
 
@@ -59,7 +59,7 @@ const TimelineSection: React.FC = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4">Our Journey</h2>
           <p className="text-gray-600 max-w-xl mx-auto">
-            Explore our milestones as we connect businesses with exceptional IT talent.
+            We are at the beginning of an exciting path—committed to reshaping the staffing industry with innovation, agility, and a client-first approach.
           </p>
           <div className="w-16 h-1 bg-blue-500 mx-auto mt-4"></div>
         </div>

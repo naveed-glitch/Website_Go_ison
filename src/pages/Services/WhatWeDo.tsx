@@ -547,7 +547,7 @@ const WhatWeDo = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.8 }}
               >
-                <button className="bg-white text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-50 transition-all transform hover:-translate-y-1">
+                <button onClick={()=>{navigate('/contact')}} className="bg-white text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-50 transition-all transform hover:-translate-y-1">
                   Contact Us
                 </button>
               </motion.div>
@@ -588,10 +588,10 @@ const WhatWeDo = () => {
                   <input type="tel" className="w-full p-3 border border-gray-300 rounded-lg" />
                 </div>
                 
-                <div className="text-sm text-gray-500 mb-6">
+                {/* <div className="text-sm text-gray-500 mb-6">
                   <span>Job seeker? </span>
                   <a href="#" className="text-blue-600 hover:underline">Visit our jobs page</a>
-                </div>
+                </div> */}
                 
                 <button className="w-full bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition-all">
                   Hire Someone
@@ -603,7 +603,7 @@ const WhatWeDo = () => {
       </section>
 
       {/* Job Seeker CTA */}
-      <section className="py-20 bg-gradient-to-r from-gray-800 to-gray-900 text-white">
+      {/* <section className="py-20 bg-gradient-to-r from-gray-800 to-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <motion.div 
             className="inline-block bg-gradient-to-r from-blue-500 to-teal-500 rounded-full p-1 mb-8"
@@ -639,7 +639,7 @@ const WhatWeDo = () => {
             </button>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Trusted By Section */}
       <section className="py-16 bg-gray-50">

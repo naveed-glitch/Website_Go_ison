@@ -21,7 +21,7 @@ const FounderSection: React.FC = () => {
             <div className="flex items-start mb-8">
               <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
               <div className="ml-6">
-                <h3 className="text-2xl font-bold">Victor</h3>
+                <h3 className="text-2xl font-bold">Naveed Haq</h3>
                 <p className="text-blue-200">Founder & CEO</p>
               </div>
             </div>
@@ -29,33 +29,33 @@ const FounderSection: React.FC = () => {
             <div className="space-y-6 text-blue-50">
               <p>
                 <span className="text-2xl font-serif mr-2">"</span>
-                Dear Aviation Enthusiasts, Partners, and Friends,
+                Dear Partners, Clients, and Friends,
               </p>
               
               <p>
-                I am thrilled to welcome you to Consolidator, a company built on the belief that the aviation industry can be more efficient, innovative, and sustainable. As someone deeply passionate about both technology and aviation, I realized that the gap between where the industry stands today and where it could be was an opportunity one we were determined to seize.
+               I am honored to welcome you to Go Ison, a company founded on the belief that the staffing industry can be more efficient, innovative, and people-focused. With a deep passion for technology and business transformation, I saw an opportunity to bridge the gap between traditional hiring practices and the evolving needs of modern organizations—and that vision continues to guide us every day.
               </p>
               
               <p>
-                When we founded Consolidator, we envisioned a team of like-minded engineers and thinkers who shared a love for flight and a belief in the power of technology to transform industries; today, that dream has become a reality, and we are proud to be working alongside some of the brightest minds in aviation and technology.
+                From the very beginning, we set out to build a team of forward-thinking professionals who share not only expertise in recruitment but also a belief in the power of innovation to reshape industries. Today, I am proud to say that vision has become a reality, and we are fortunate to work alongside some of the brightest minds in staffing and workforce solutions.
               </p>
               
               <p>
-                From our earliest days, we've focused on developing solutions that don't just address the challenges of today but anticipate the needs of tomorrow. We believe that innovation shouldn't just make aviation faster or cheaper—it should make it smarter, safer, and greener.
+                At Go Ison, our focus is on delivering solutions that don’t just meet today’s hiring challenges but anticipate the needs of tomorrow. For us, recruitment is not just about filling positions—it’s about helping businesses build smarter, stronger, and more sustainable teams.
               </p>
               
               <p>
-                But none of this would have been possible without the support of our partners, collaborators, and clients who trust us to bring real change to their operations. Together, we are shaping the future of aviation and I am excited to see where this journey will take us.
+                This journey would not have been possible without the trust and support of our partners, collaborators, and clients. Together, we are redefining how businesses connect with talent, and I am excited about the milestones ahead.
               </p>
               
               <p>
-                To everyone who believes in the power of innovation and shares our passion for flight—thank you for being part of this journey.
+                To everyone who shares our passion for innovation and believes in the power of people—thank you for being part of this journey.
               </p>
               
               <p className="mt-8">
                 With gratitude,<br />
-                <span className="text-xl font-bold">Victor</span><br />
-                <span className="text-blue-200">founder@consolidator</span>
+                <span className="text-xl font-bold">Naveed Haq</span><br />
+                <span className="text-blue-200">naveed@goison.com</span>
               </p>
             </div>
           </motion.div>

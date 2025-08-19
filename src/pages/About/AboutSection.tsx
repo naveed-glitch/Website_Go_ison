@@ -54,7 +54,7 @@ const AboutSection: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          Transforming the IT staffing industry with innovation and a global reach.
+          At Go Ison, we’re your strategic talent partner—helping businesses across the U.S. build high-performing teams that drive lasting success.
         </motion.p>
       </section>
 
@@ -70,7 +70,7 @@ const AboutSection: React.FC = () => {
           >
             <h2 className="text-4xl font-bold mb-6">Our Mission</h2>
             <p className="text-xl">
-              To connect top-tier talent with leading companies, fostering innovation and growth.
+              To empower businesses by delivering top talent and tailored workforce solutions that fuel innovation, efficiency, and growth.
             </p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -85,9 +85,9 @@ const AboutSection: React.FC = () => {
               >
                 <h3 className="text-2xl font-bold mb-4">{title}</h3>
                 <p>
-                  {title === "Innovative Solutions" && "Providing cutting-edge staffing services tailored to meet client needs."}
-                  {title === "Global Reach" && "A presence in major cities around the globe ensures unparalleled service."}
-                  {title === "Dedicated Team" && "Experienced professionals committed to excellence in every engagement."}
+                  {title === "Innovative Solutions" && "Customized staffing strategies designed to meet your unique business challenges."}
+                  {title === "Global Reach" && "A strong presence across major markets ensures consistent and reliable service worldwide."}
+                  {title === "Dedicated Team" && "Experienced professionals committed to driving measurable results for every client partnership."}
                 </p>
               </motion.div>
             ))}
@@ -105,8 +105,8 @@ const AboutSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 1 }}
           >
-            <h2 className="text-4xl font-bold text-blue-900 mb-4">Our Global Presence</h2>
-            <p className="text-xl">We have established offices in key locations around the world.</p>
+            <h2 className="text-4xl font-bold text-blue-900 mb-4">Worldwide Presence</h2>
+            <p className="text-xl">Strategically located offices to support businesses across the globe</p>
           </motion.div>
           <MapContainer
             center={[20, 0]}

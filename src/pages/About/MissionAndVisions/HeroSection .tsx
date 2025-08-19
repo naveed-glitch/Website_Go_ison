@@ -31,10 +31,10 @@ const HeroSection: React.FC = () => {
           className="mb-8"
         >
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
-            Talent Bridge
+            Go Ison
           </h1>
           <p className="text-xl md:text-2xl text-blue-200 max-w-3xl mx-auto">
-            Connecting exceptional talent with transformative organizations worldwide
+             Connecting top-tier talent with forward-thinking organizations across the globe.
           </p>
         </motion.div>
         
@@ -61,7 +61,7 @@ const HeroSection: React.FC = () => {
           >
             Contact Us
           </motion.button>
-          <motion.button
+          {/* <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-8 py-3 bg-gray-800 text-white rounded-full font-medium hover:bg-gray-700 transition"
@@ -69,7 +69,7 @@ const HeroSection: React.FC = () => {
 
           >
             Need a Job?
-          </motion.button>
+          </motion.button> */}
         </motion.div>
         
         <motion.div

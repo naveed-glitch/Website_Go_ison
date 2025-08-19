@@ -45,16 +45,16 @@ const Home: React.FC = () => {
      
 
       {/* Resources Section */}
-      <section id="news" className="scroll-mt-20">
+      {/* <section id="news" className="scroll-mt-20">
        <ResourcesSection/>
        
-      </section>
+      </section> */}
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="scroll-mt-20">
+      {/* <section id="testimonials" className="scroll-mt-20">
         <TestimonialSection/>
     
-      </section>
+      </section> */}
 
       {/* Contact CTA Section */}
       <section id="contact" className="scroll-mt-20">

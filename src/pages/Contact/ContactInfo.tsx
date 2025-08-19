@@ -7,22 +7,22 @@ const ContactInfo: React.FC = () => {
     {
       icon: <Phone className="w-6 h-6 text-blue-600" />,
       title: "Call us",
-      content: "Speak directly to our team",
-      details: "+1 (555) 123-4567",
+      content: "Speak directly with our team",
+      details: "+1 (312) 973-6111",
       action: "Call now"
     },
     {
       icon: <Mail className="w-6 h-6 text-blue-600" />,
       title: "Email us",
       content: "Get in touch via email",
-      details: "contact@example.com",
+      details: "naveed@goison.com",
       action: "Send email"
     },
     {
       icon: <MapPin className="w-6 h-6 text-blue-600" />,
       title: "Visit us",
       content: "See our office location",
-      details: "14 Greenroad St., New York, NY 10001",
+      details: "2908 Jerrie Lane, Glenview, IL 60025",
       action: "View on map"
     },
     

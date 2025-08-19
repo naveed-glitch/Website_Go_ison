@@ -11,9 +11,9 @@ function MissionNVision() {
         <HeroSection />
       <AboutSection />
       <MissionVision />
-      <HistoryTimeline />
-      <ResourcesSection />
-      <TeamSection/>
+      {/* <HistoryTimeline /> */}
+      {/* <ResourcesSection /> */}
+      {/* <TeamSection/> */}
       
     </div>
   )

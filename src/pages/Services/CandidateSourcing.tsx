@@ -3,11 +3,13 @@ import  { useEffect, useRef } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import { ChevronRight, User, Search, Users, BarChart, Settings, Check } from 'lucide-react';
 import CTASection from '../Home/ContactCTA';
+import { useNavigate } from 'react-router-dom';
 
 const CandidateSourcing = () => {
   const heroRef = useRef(null);
   const isHeroInView = useInView(heroRef, { once: true });
   const heroControls = useAnimation();
+  const navigate = useNavigate();
   
 
   useEffect(() => {
@@ -80,7 +82,7 @@ const CandidateSourcing = () => {
               visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.4 } }
             }}
           >
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg flex items-center mx-auto transition-all duration-300 transform hover:scale-105">
+            <button onClick={()=>{navigate('/contact')}} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg flex items-center mx-auto transition-all duration-300 transform hover:scale-105">
               Get Started <ChevronRight className="ml-2" />
             </button>
           </motion.div>

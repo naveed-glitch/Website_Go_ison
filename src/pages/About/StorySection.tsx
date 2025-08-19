@@ -34,10 +34,10 @@ const StorySection: React.FC = () => {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8 }}
             >
-              <div className="text-blue-300 text-sm">FOUNDING</div>
-              <div className="text-2xl font-bold mt-2">2016 - Passion Takes Flight</div>
+              <div className="text-blue-300 text-sm">Vision Realized</div>
+              <div className="text-2xl font-bold mt-2">Our Vision</div>
               <p className="mt-4">
-                Consolidator is established by a team of aviation enthusiasts with a shared vision to revolutionize the airline industry.
+                 To become a trusted partner for businesses worldwide—helping them build high-performing teams and achieve sustainable growth.
               </p>
             </motion.div>
           </motion.div>
@@ -54,9 +54,9 @@ const StorySection: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <div className="text-blue-500 text-sm">BEGINNINGS</div>
-              <div className="text-2xl font-bold mt-2">2006 - Innovation Begins</div>
+              <div className="text-2xl font-bold mt-2">2024 – The Beginning</div>
               <p className="mt-4">
-                Our journey started with a commitment to modernize traditional aviation with advanced and innovative solutions.
+                Go Ison was founded with a clear mission: to transform the staffing industry by delivering tailored, client-focused workforce solutions.
               </p>
             </motion.div>
             <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96 mt-16" />

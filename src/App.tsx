@@ -27,8 +27,8 @@ function App() {
           <Route path="/about/our-team" element={<OurTeam />} />
           <Route path="/services/what-we-do" element={<WhatWeDo />} />
           <Route path="/services/candidate-sourcing" element={<CandidateSourcing />} />
-          <Route path="/jobs" element={<Jobs />} />
-          <Route path="/news" element={<NewsPage />} />
+          {/* <Route path="/jobs" element={<Jobs />} />
+          <Route path="/news" element={<NewsPage />} /> */}
         </Routes>
       </Layout>
     </ParallaxProvider>

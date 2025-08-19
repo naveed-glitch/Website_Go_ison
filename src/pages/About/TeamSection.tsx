@@ -37,7 +37,7 @@ export const TeamSection: FC = () => (
     viewport={{ once: true, margin: "-100px" }}
   >
     {/* Card 1: Expert IT Talent */}
-    <motion.div
+    {/* <motion.div
       className="bg-white border border-gray-200 rounded-2xl shadow-sm p-8 flex flex-col items-center transition-colors"
       variants={cardVariants}
       whileHover="hover"
@@ -51,10 +51,10 @@ export const TeamSection: FC = () => (
       <p className="text-gray-600 text-center">
         We specialize in identifying top-tier IT professionals with niche skills across software development, cloud computing, cybersecurity, and data science.
       </p>
-    </motion.div>
+    </motion.div> */}
 
     {/* Card 2: Client-Centric Solutions */}
-    <motion.div
+    {/* <motion.div
       className="bg-white border border-gray-200 rounded-2xl shadow-sm p-8 flex flex-col items-center transition-colors"
       variants={cardVariants}
       whileHover="hover"
@@ -68,10 +68,10 @@ export const TeamSection: FC = () => (
       <p className="text-gray-600 text-center">
         We partner with organizations to understand their unique culture and technical requirements, delivering candidates who are the perfect fit.
       </p>
-    </motion.div>
+    </motion.div> */}
 
     {/* Card 3: Innovative Matching */}
-    <motion.div
+    {/* <motion.div
       className="bg-white border border-gray-200 rounded-2xl shadow-sm p-8 flex flex-col items-center transition-colors"
       variants={cardVariants}
       whileHover="hover"
@@ -85,7 +85,7 @@ export const TeamSection: FC = () => (
       <p className="text-gray-600 text-center">
         Our proprietary matching algorithm and industry expertise ensure we connect the right talent with the right opportunities faster and more efficiently.
       </p>
-    </motion.div>
+    </motion.div> */}
   </motion.div>
 );
 

@@ -5,26 +5,26 @@ const WhatMakesUsSection = () => {
   const features = [
     {
       title: "Our Culture",
-      description: "A supportive environment where everyone is encouraged to grow and innovate. We celebrate diversity and foster inclusivity at all levels.",
+      description: "We foster a supportive environment where innovation thrives, and everyone is encouraged to grow. Diversity and inclusion are at the heart of everything we do.",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3",
       reverse: false
     },
     {
       title: "Our Approach",
-      description: "We take a personalized approach to every client and candidate, ensuring the best possible match for long-term success.",
+      description: "We take a client-first approach, tailoring solutions to meet unique business needs and ensuring the right match for long-term success.",
       image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3",
       reverse: true
     },
     {
       title: "Our Impact",
-      description: "Through our work, we've transformed thousands of careers and helped businesses achieve their strategic goals.",
+      description: "Through our partnerships, we’ve helped businesses strengthen their teams and professionals achieve their career goals—creating measurable results that matter.",
       image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3",
       reverse: false
     }
   ];
 
   return (
-    <div className="py-24 px-4 bg-[#FFF8E7]">
+    <div className="py-24 px-4 bg-blue-100">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           className="text-center mb-20"
@@ -35,7 +35,7 @@ const WhatMakesUsSection = () => {
         >
           <h2 className="text-5xl font-bold text-gray-800 mb-6">What Makes Us, Us</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover the core elements that define our identity and drive our success in the industry
+            The core principles that define who we are and drive our success in the staffing industry.
           </p>
         </motion.div>
         

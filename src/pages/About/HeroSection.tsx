@@ -44,8 +44,8 @@ const HeroSection: React.FC = () => {
         >
           <Briefcase className="w-16 h-16 text-blue-300 mx-auto mb-4" />
           <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight">
-            <span className="block">Empowering Your</span>
-            <span className="block mt-2 text-blue-300">Tech Workforce</span>
+            <span className="block">Powering Your Business</span>
+            <span className="block mt-2 text-blue-300">with Tech Talent</span>
           </h1>
         </motion.div>
 
@@ -55,7 +55,7 @@ const HeroSection: React.FC = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          We connect innovative companies with top-tier IT professionals, delivering tailored staffing solutions that drive digital transformation.
+          We connect companies with top IT professionals, delivering tailored staffing solutions that accelerate innovation and digital growth.
         </motion.p>
 
         <motion.button

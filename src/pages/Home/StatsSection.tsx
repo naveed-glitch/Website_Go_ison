@@ -63,7 +63,7 @@ const StatsSection: React.FC = () => {
 
           {/* Stat content */}
           {/* <p className="text-4xl font-bold text-blue-600 z-10">{stat.value}</p> */}
-          <p >{stat.value}</p>
+          <p className="text-2xl font-bold text-blue-600 z-10">{stat.value}</p>
           <p className="mt-2 text-blue-600 text-sm z-10 max-w-[220px]">{stat.description}</p>
         </div>
       ))}

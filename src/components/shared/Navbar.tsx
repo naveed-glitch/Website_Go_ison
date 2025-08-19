@@ -21,9 +21,9 @@ const NAV_LINKS = [
       { name: "Candidate Sourcing", link: "/services/candidate-sourcing" },
     ],
   },
-  { name: "Need a Job?", link: "/jobs" },
+  // { name: "Need a Job?", link: "/jobs" },
   { name: "Contact Us", link: "/contact" },
-  { name: "News", link: "/news" },
+  // { name: "News", link: "/news" },
 ];
 
 const Navbar: React.FC = () => {
@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
             <span className="text-blue-700 font-extrabold text-2xl tracking-tight">
-              TalentBridge
+              Go Ison
             </span>
           </Link>
 

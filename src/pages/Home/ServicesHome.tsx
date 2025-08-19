@@ -2,43 +2,44 @@ import { motion } from 'framer-motion';
 import { 
   FaHandshake, FaBolt, FaUserTie, FaHeadset, FaLightbulb, FaChartLine 
 } from 'react-icons/fa';
+import {Link} from "react-router-dom"
 
 const ServicesHome = () => {
   const steps = [
     {
-      icon: <FaHandshake className="text-blue-500" />, 
-      title: 'Step 1: Connect with Us',
-      description: 'Reach out to us with your requirements, and we’ll start the conversation.',
+      icon: <FaHandshake className="text-[#1e3a8a]" />, 
+      title: 'Step 1: Discovery Call',
+      description: ' We connect with you to understand your hiring needs, company culture, and specific role requirements.',
       color: 'from-blue-500 to-blue-300',
     },
     {
-      icon: <FaBolt className="text-yellow-500" />,
-      title: 'Step 2: Rapid Evaluation',
-      description: 'Our team quickly assesses your needs and identifies top talent.',
+      icon: <FaBolt className="text-[#1e3a8a]" />,
+      title: 'Step 2: Needs Assessment',
+      description: 'Our team analyzes your requirements and creates a tailored recruitment strategy for your business.',
       color: 'from-yellow-500 to-yellow-300',
     },
     {
-      icon: <FaUserTie className="text-purple-500" />,
-      title: 'Step 3: Expert Matching',
-      description: 'We match you with professionals who perfectly fit your requirements.',
+      icon: <FaUserTie className="text-[#1e3a8a]" />,
+      title: 'Step 3: Talent Sourcing & Screening',
+      description: ' We source, evaluate, and shortlist top candidates who match your criteria.',
       color: 'from-purple-500 to-purple-300',
     },
     {
-      icon: <FaHeadset className="text-green-500" />,
-      title: 'Step 4: Onboarding Support',
-      description: 'Seamlessly integrate new talent with our dedicated support.',
+      icon: <FaHeadset className="text-[#1e3a8a]" />,
+      title: 'Step 4: Client Interviews & Selection',
+      description: 'You interview the shortlisted candidates, and we assist throughout the selection process.',
       color: 'from-green-500 to-green-300',
     },
     {
-      icon: <FaLightbulb className="text-orange-500" />,
-      title: 'Step 5: Continuous Assistance',
-      description: 'We ensure ongoing success with continuous guidance and support.',
+      icon: <FaLightbulb className="text-[#1e3a8a]" />,
+      title: 'Step 5: Onboarding Support',
+      description: ' We ensure smooth onboarding of new hires with dedicated support and guidance.',
       color: 'from-orange-500 to-orange-300',
     },
     {
-      icon: <FaChartLine className="text-teal-500" />,
-      title: 'Step 6: Growth Partnership',
-      description: 'We grow with you, providing strategic insights for long-term success.',
+      icon: <FaChartLine className="text-[#1e3a8a]" />,
+      title: 'Step 6: Long-Term Partnership',
+      description: 'Beyond placements, we provide ongoing workforce solutions to support your business growth.',
       color: 'from-teal-500 to-teal-300',
     },
   ];
@@ -116,8 +117,8 @@ const ServicesHome = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 text-transparent bg-clip-text">
-              How Our Application Process Works
+            <span className="bg-[#1e3a8a] text-transparent bg-clip-text">
+              How We Partner With You
             </span>
           </motion.h2>
           
@@ -128,11 +129,11 @@ const ServicesHome = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Streamlined steps to ensure you get the best results quickly and efficiently.
+            Streamlined steps to help you find the right talent quickly and efficiently.
           </motion.p>
           
           <motion.div 
-            className="mt-8 w-32 h-1 bg-gradient-to-r from-blue-500 to-teal-500 mx-auto rounded-full"
+            className="mt-8 w-32 h-1 bg-[#1e3a8a] mx-auto rounded-full"
             initial={{ width: 0 }}
             whileInView={{ width: "8rem" }}
             viewport={{ once: true }}
@@ -155,7 +156,7 @@ const ServicesHome = () => {
               whileHover="hover"
             >
               {/* Decorative gradient bar */}
-              <div className={`absolute top-0 left-0 w-full h-2 bg-gradient-to-r ${step.color}`} />
+              <div className={`absolute top-0 left-0 w-full h-2 bg-[#1e3a8a]`} />
               
               {/* Number indicator */}
               <div className="absolute top-6 right-6 w-10 h-10 flex items-center justify-center rounded-full bg-blue-50 text-blue-700 font-bold text-lg">
@@ -194,9 +195,12 @@ const ServicesHome = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <Link to={'/contact'}>
+          <button className="bg-[#1e3a8a] text-white font-medium py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             Get Started Today
           </button>
+          </Link>
+          
           <p className="mt-4 text-gray-500">
             Join thousands of satisfied clients
           </p>

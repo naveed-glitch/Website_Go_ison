@@ -40,7 +40,7 @@ const MissionVision: React.FC = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Mission, Vision & Values</h2>
           <p className="text-gray-700 max-w-3xl mx-auto text-lg">
-            Guiding principles that shape our culture and drive our success
+            The principles that guide our culture, shape our partnerships, and drive our success.
           </p>
         </motion.div>
         
@@ -60,7 +60,7 @@ const MissionVision: React.FC = () => {
               <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
             </div>
             <p className="text-gray-700 text-lg">
-              Working at the crossroads of people and transformative technologies, Talent Bridge delivers creative business solutions — powered by top talent — to match your strategic goals, helping you to succeed now and in the future.
+              At Go Ison, our mission is to empower businesses with tailored staffing solutions—connecting top talent with the right opportunities to fuel growth, innovation, and long-term success.
             </p>
           </motion.div>
           
@@ -79,7 +79,7 @@ const MissionVision: React.FC = () => {
               <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
             </div>
             <p className="text-gray-700 text-lg">
-              At Talent Bridge, we are united by a collective vision: to provide the best business technology consulting, talent, and learning solutions to enterprises around the world.
+              We envision a future where businesses worldwide can access the right people, skills, and solutions at the right time—creating stronger teams and sustainable progress.
             </p>
           </motion.div>
         </div>
@@ -92,7 +92,7 @@ const MissionVision: React.FC = () => {
         >
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Our Core Values</h3>
           <p className="text-gray-700 max-w-3xl mx-auto mb-12 text-lg">
-            In support of our vision, we adhere to a set of core values that help to shape Talent Bridge's corporate culture, drive business decisions, and define how we partner with clients, employees, and contractors.
+            Our values define how we work and how we partner with clients, employees, and communities. They shape our culture, influence every decision, and keep us focused on delivering impact with integrity.
           </p>
         </motion.div>
         
@@ -112,7 +112,7 @@ const MissionVision: React.FC = () => {
               </svg>
             </div>
             <h4 className="text-xl font-bold text-gray-900 mb-2">Collaboration</h4>
-            <p className="text-gray-700">We work well with others toward a common goal.</p>
+            <p className="text-gray-700">We work together with clients, colleagues, and partners to achieve shared success.</p>
           </motion.div>
           
           <motion.div 
@@ -125,7 +125,7 @@ const MissionVision: React.FC = () => {
               </svg>
             </div>
             <h4 className="text-xl font-bold text-gray-900 mb-2">Dependability</h4>
-            <p className="text-gray-700">We do what we say and finish what we start.</p>
+            <p className="text-gray-700">We deliver on our promises with consistency, reliability, and trust.</p>
           </motion.div>
           
           <motion.div 
@@ -138,7 +138,7 @@ const MissionVision: React.FC = () => {
               </svg>
             </div>
             <h4 className="text-xl font-bold text-gray-900 mb-2">Empowerment</h4>
-            <p className="text-gray-700">We help others belong and become who they were meant to be.</p>
+            <p className="text-gray-700">We enable people and businesses to grow, thrive, and reach their full potential.</p>
           </motion.div>
           
           <motion.div 
@@ -151,7 +151,7 @@ const MissionVision: React.FC = () => {
               </svg>
             </div>
             <h4 className="text-xl font-bold text-gray-900 mb-2">Perseverance</h4>
-            <p className="text-gray-700">We're persistent in our pursuit of excellence.</p>
+            <p className="text-gray-700">We stay committed to excellence, even in the face of challenges.</p>
           </motion.div>
           
           <motion.div 
@@ -163,8 +163,8 @@ const MissionVision: React.FC = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
               </svg>
             </div>
-            <h4 className="text-xl font-bold text-gray-900 mb-2">Caring</h4>
-            <p className="text-gray-700">We care about and do what is right for our customers, community, and colleagues.</p>
+            <h4 className="text-xl font-bold text-gray-900 mb-2">Care</h4>
+            <p className="text-gray-700">We put people first—prioritizing what’s right for our clients, communities, and teams.</p>
           </motion.div>
         </motion.div>
       </div>
