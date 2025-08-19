@@ -24,7 +24,7 @@ const testimonials: Testimonial[] = [
     name: "Sarah Johnson",
     company: "TechNova Inc.",
     role: "HR Director",
-    content: "Talent Bridge transformed our hiring process. We found 5 top-tier developers in just 2 weeks, saving us countless hours and resources.",
+    content: "Go Ison transformed our hiring process. We found 5 top-tier developers in just 2 weeks, saving us countless hours and resources.",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
     rating: 5,
     date: "May 15, 2024"
@@ -34,7 +34,7 @@ const testimonials: Testimonial[] = [
     name: "Michael Rodriguez",
     company: "Global Solutions",
     role: "CTO",
-    content: "The talent pool provided by Talent Bridge was exceptional. We've reduced our time-to-hire by 65% and improved retention rates significantly.",
+    content: "The talent pool provided by Go Ison was exceptional. We've reduced our time-to-hire by 65% and improved retention rates significantly.",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
     rating: 5,
     date: "April 28, 2024"
@@ -44,7 +44,7 @@ const testimonials: Testimonial[] = [
     name: "Jennifer Kim",
     company: "InnovateX",
     role: "Talent Acquisition Lead",
-    content: "Working with Talent Bridge has been a game-changer. Their understanding of our industry needs and quick response time is unparalleled.",
+    content: "Working with Go Ison has been a game-changer. Their understanding of our industry needs and quick response time is unparalleled.",
     avatar: "https://randomuser.me/api/portraits/women/68.jpg",
     rating: 4,
     date: "June 3, 2024"
@@ -54,7 +54,7 @@ const testimonials: Testimonial[] = [
     name: "David Thompson",
     company: "Enterprise Partners",
     role: "Operations Manager",
-    content: "The quality of candidates exceeded our expectations. Talent Bridge's screening process ensures we only see the most qualified professionals.",
+    content: "The quality of candidates exceeded our expectations. Go Ison's screening process ensures we only see the most qualified professionals.",
     avatar: "https://randomuser.me/api/portraits/men/45.jpg",
     rating: 5,
     date: "March 12, 2024"
@@ -64,7 +64,7 @@ const testimonials: Testimonial[] = [
     name: "Emily Chen",
     company: "FutureTech",
     role: "CEO",
-    content: "Talent Bridge helped us scale our team during a critical growth phase. Their staffing solutions are both efficient and cost-effective.",
+    content: "Go Ison helped us scale our team during a critical growth phase. Their staffing solutions are both efficient and cost-effective.",
     avatar: "https://randomuser.me/api/portraits/women/23.jpg",
     rating: 5,
     date: "May 30, 2024"
@@ -74,7 +74,7 @@ const testimonials: Testimonial[] = [
     name: "Robert Williams",
     company: "DataSystems Ltd",
     role: "Engineering Director",
-    content: "The technical assessments provided by Talent Bridge saved us weeks of interview time. We found the perfect candidate on the first try.",
+    content: "The technical assessments provided by Go Ison saved us weeks of interview time. We found the perfect candidate on the first try.",
     avatar: "https://randomuser.me/api/portraits/men/67.jpg",
     rating: 4,
     date: "April 5, 2024"
