@@ -108,8 +108,8 @@ const Contact: React.FC = () => {
             {[
               {
                 title: "North America Headquarters",
-                address: "999 West Big Beaver Road, Troy, Michigan 48084-4782",
-                phone: "+1-248-362-4444"
+                address: "2908 Jerrie Lane, Glenview, IL 60025",
+                phone: "+1 (312) 973-6111"
               },
               {
                 title: "Asia-Pacific Headquarters",
@@ -153,7 +153,7 @@ const Contact: React.FC = () => {
  
 
       {/* FAQ Section */}
-    <FAQAccordion/>
+    {/* <FAQAccordion/> */}
 
       {/* Map Section */}
       <MapSection />

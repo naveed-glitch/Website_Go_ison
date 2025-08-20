@@ -61,7 +61,7 @@ const industriesRow2 = [
     name: "Sarah Johnson",
     company: "TechNova Inc.",
     role: "HR Director",
-    content: "Go Ison transformed our hiring process. We found 5 top-tier developers in just 2 weeks, saving us countless hours and resources.",
+    content: "GoisOn transformed our hiring process. We found 5 top-tier developers in just 2 weeks, saving us countless hours and resources.",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
     rating: 5,
     date: "May 15, 2024"
@@ -71,7 +71,7 @@ const industriesRow2 = [
     name: "Michael Rodriguez",
     company: "Global Solutions",
     role: "CTO",
-    content: "The talent pool provided by Go Ison was exceptional. We've reduced our time-to-hire by 65% and improved retention rates significantly.",
+    content: "The talent pool provided by GoisOn was exceptional. We've reduced our time-to-hire by 65% and improved retention rates significantly.",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
     rating: 5,
     date: "April 28, 2024"
@@ -81,7 +81,7 @@ const industriesRow2 = [
     name: "Jennifer Kim",
     company: "InnovateX",
     role: "Talent Acquisition Lead",
-    content: "Working with Go Ison has been a game-changer. Their understanding of our industry needs and quick response time is unparalleled.",
+    content: "Working with GoisOn has been a game-changer. Their understanding of our industry needs and quick response time is unparalleled.",
     avatar: "https://randomuser.me/api/portraits/women/68.jpg",
     rating: 4,
     date: "June 3, 2024"
@@ -91,7 +91,7 @@ const industriesRow2 = [
     name: "David Thompson",
     company: "Enterprise Partners",
     role: "Operations Manager",
-    content: "The quality of candidates exceeded our expectations. Go Ison's screening process ensures we only see the most qualified professionals.",
+    content: "The quality of candidates exceeded our expectations. GoisOn's screening process ensures we only see the most qualified professionals.",
     avatar: "https://randomuser.me/api/portraits/men/45.jpg",
     rating: 5,
     date: "March 12, 2024"
@@ -101,7 +101,7 @@ const industriesRow2 = [
     name: "Emily Chen",
     company: "FutureTech",
     role: "CEO",
-    content: "Go Ison helped us scale our team during a critical growth phase. Their staffing solutions are both efficient and cost-effective.",
+    content: "GoisOn helped us scale our team during a critical growth phase. Their staffing solutions are both efficient and cost-effective.",
     avatar: "https://randomuser.me/api/portraits/women/23.jpg",
     rating: 5,
     date: "May 30, 2024"
@@ -111,7 +111,7 @@ const industriesRow2 = [
     name: "Robert Williams",
     company: "DataSystems Ltd",
     role: "Engineering Director",
-    content: "The technical assessments provided by Go Ison saved us weeks of interview time. We found the perfect candidate on the first try.",
+    content: "The technical assessments provided by GoisOn saved us weeks of interview time. We found the perfect candidate on the first try.",
     avatar: "https://randomuser.me/api/portraits/men/67.jpg",
     rating: 4,
     date: "April 5, 2024"
@@ -123,37 +123,37 @@ const industriesRow2 = [
     {
       title: "Candidate Sourcing",
       icon: <FaSearch className="text-blue-500" />,
-      description: "Advanced sourcing techniques to find the perfect candidates for your specific needs.",
+      description: "Smart sourcing strategies to identify and connect you with the right candidates for your specific needs.",
       link: "/services/candidate-sourcing"
     },
     {
       title: "Talent Acquisition",
       icon: <FaUserCheck className="text-blue-500" />,
-      description: "End-to-end recruitment process to secure top IT talent for your organization.",
+      description: "End-to-end recruitment services designed to secure top IT professionals who align with your business goals.",
       link: "/services/talent-acquisition"
     },
     {
       title: "Contract Staffing",
       icon: <FaSyncAlt className="text-blue-500" />,
-      description: "Flexible staffing solutions for project-based work and temporary positions.",
+      description: "Flexible staffing options for short-term projects, seasonal demand, or temporary workforce needs.",
       link: "/services/contract-staffing"
     },
     {
       title: "Executive Search",
       icon: <FaRocket className="text-blue-500" />,
-      description: "Specialized recruitment for C-suite and senior technology leadership roles.",
+      description: "Specialized recruitment for C-level and senior technology leadership roles to drive strategic growth.",
       link: "/services/executive-search"
     },
     {
       title: "Managed Services",
       icon: <FaShieldAlt className="text-blue-500" />,
-      description: "Comprehensive outsourcing of your entire recruitment function.",
+      description: "Full-scale outsourcing of your recruitment operations for efficiency and scalability.",
       link: "/services/managed-services"
     },
     {
       title: "Workforce Consulting",
       icon: <FaChartLine className="text-blue-500" />,
-      description: "Strategic guidance to optimize your talent acquisition and retention strategies.",
+      description: "Expert guidance to optimize hiring, retention, and workforce planning strategies.",
       link: "/services/workforce-consulting"
     }
   ];
@@ -245,14 +245,14 @@ const industriesRow2 = [
                 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight"
                 variants={fadeIn}
               >
-                Strategic IT Staffing Solutions for the Digital Era
+                Smart IT Staffing for the Digital Era
               </motion.h1>
               
               <motion.p 
                 className="text-xl text-blue-100 mb-8 max-w-2xl"
                 variants={fadeIn}
               >
-                Connecting exceptional tech talent with innovative companies across all industries. Our tailored staffing solutions drive your business forward.
+                Connecting top technology talent with innovative businesses worldwide. Our customized staffing solutions are designed to strengthen teams, accelerate growth, and move your business forward.
               </motion.p>
               
               <motion.div 
@@ -298,10 +298,10 @@ const industriesRow2 = [
   <div className="max-w-7xl mx-auto">
     <div className="text-center mb-16">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-        Staffing All Industries & Funds
+        Staffing Across Industries & Sectors
       </h2>
       <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-        While we take pride in finding qualified candidates for each and every position, these are some of the industries and functions where our staffing agency has deep expertise.
+        We take pride in delivering the right talent for every role. Here are some of the industries and functions where our team brings proven expertise and trusted solutions.
       </p>
     </div>
 
@@ -359,7 +359,7 @@ const industriesRow2 = [
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Our Comprehensive Staffing Services
+              Our Staffing Solutions
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-600 max-w-3xl mx-auto"
@@ -368,7 +368,7 @@ const industriesRow2 = [
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Tailored solutions to meet your unique staffing challenges and business objectives.
+              Customized services designed to address your unique hiring challenges and support your business goals.
             </motion.p>
           </div>
 
@@ -414,12 +414,10 @@ const industriesRow2 = [
           </div>
         </div>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-          Your Strategic Technology Staffing Partner
+          Your Trusted Technology Staffing Partner
         </h2>
         <p className="text-lg text-gray-600 mb-8">
-          We don't just fill positions - we become an extension of your team.
-          Our technology staffing solutions are designed to align with your
-          business goals and technical requirements.
+          At Go Ison, we don’t just fill roles—we become an extension of your team. Our technology staffing solutions are built to align with your business objectives and technical requirements, ensuring the right talent powers your success.
         </p>
 
         <div className="space-y-6">
@@ -432,8 +430,7 @@ const industriesRow2 = [
                 Dedicated Expertise
               </h3>
               <p className="text-gray-600">
-                Specialized recruiters who understand your technology stack and
-                business domain.
+                Recruiters with deep knowledge of technology domains and industry demands.
               </p>
             </div>
           </div>
@@ -447,7 +444,7 @@ const industriesRow2 = [
                 Scalable Solutions
               </h3>
               <p className="text-gray-600">
-                Flexible staffing models that grow with your business needs.
+                Flexible staffing models that adapt and grow with your business.
               </p>
             </div>
           </div>
@@ -461,8 +458,7 @@ const industriesRow2 = [
                 Quality Assurance
               </h3>
               <p className="text-gray-600">
-                Rigorous vetting process ensuring only top-tier talent reaches
-                you.
+                A rigorous vetting process that ensures only top-tier talent joins your team.
               </p>
             </div>
           </div>
@@ -635,7 +631,7 @@ const industriesRow2 = [
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Ready to Transform Your IT Staffing Strategy?
+            Ready to Redefine Your IT Staffing?
           </motion.h2>
           <motion.p 
             className="text-xl text-gray-600 mb-10 max-w-3xl mx-auto"
@@ -644,7 +640,7 @@ const industriesRow2 = [
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Partner with us to access top IT talent and innovative staffing solutions tailored to your business needs.
+            Partner with Go Ison to access top-tier IT talent and innovative staffing solutions tailored to your business goals.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

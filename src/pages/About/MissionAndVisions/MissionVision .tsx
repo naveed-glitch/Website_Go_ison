@@ -60,7 +60,7 @@ const MissionVision: React.FC = () => {
               <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
             </div>
             <p className="text-gray-700 text-lg">
-              At Go Ison, our mission is to empower businesses with tailored staffing solutions—connecting top talent with the right opportunities to fuel growth, innovation, and long-term success.
+              At GoisOn, our mission is to empower businesses with tailored staffing solutions—connecting top talent with the right opportunities to fuel growth, innovation, and long-term success.
             </p>
           </motion.div>
           

@@ -89,7 +89,7 @@ export function HeroSection() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
-          We're a team of passionate thought leaders committed to making an impact on workforce solutions around the world.
+          Our leadership team is driven by passion, innovation, and a commitment to shaping the future of workforce solutions. Together, we bring expertise and vision to help businesses and professionals thrive.
         </motion.p>
         
         <motion.div

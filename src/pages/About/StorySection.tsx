@@ -56,7 +56,7 @@ const StorySection: React.FC = () => {
               <div className="text-blue-500 text-sm">BEGINNINGS</div>
               <div className="text-2xl font-bold mt-2">2024 – The Beginning</div>
               <p className="mt-4">
-                Go Ison was founded with a clear mission: to transform the staffing industry by delivering tailored, client-focused workforce solutions.
+                GoisOn was founded with a clear mission: to transform the staffing industry by delivering tailored, client-focused workforce solutions.
               </p>
             </motion.div>
             <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96 mt-16" />

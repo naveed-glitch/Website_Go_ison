@@ -35,7 +35,7 @@ const OurPurposeSection = () => {
               — Naveed Haq, CEO
             </p>
             <p>
-              We believe that when people are supported to grow and thrive, they bring their best selves to work. At Go Ison, this means our clients, consultants, and candidates benefit from a level of dedication and performance that goes beyond expectations.
+              We believe that when people are supported to grow and thrive, they bring their best selves to work. At GoisOn, this means our clients, consultants, and candidates benefit from a level of dedication and performance that goes beyond expectations.
             </p>
           </motion.div>
         </motion.div>

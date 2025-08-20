@@ -33,7 +33,7 @@ const FounderSection: React.FC = () => {
               </p>
               
               <p>
-               I am honored to welcome you to Go Ison, a company founded on the belief that the staffing industry can be more efficient, innovative, and people-focused. With a deep passion for technology and business transformation, I saw an opportunity to bridge the gap between traditional hiring practices and the evolving needs of modern organizations—and that vision continues to guide us every day.
+               I am honored to welcome you to GoisOn, a company founded on the belief that the staffing industry can be more efficient, innovative, and people-focused. With a deep passion for technology and business transformation, I saw an opportunity to bridge the gap between traditional hiring practices and the evolving needs of modern organizations—and that vision continues to guide us every day.
               </p>
               
               <p>
@@ -41,7 +41,7 @@ const FounderSection: React.FC = () => {
               </p>
               
               <p>
-                At Go Ison, our focus is on delivering solutions that don’t just meet today’s hiring challenges but anticipate the needs of tomorrow. For us, recruitment is not just about filling positions—it’s about helping businesses build smarter, stronger, and more sustainable teams.
+                At GoisOn, our focus is on delivering solutions that don’t just meet today’s hiring challenges but anticipate the needs of tomorrow. For us, recruitment is not just about filling positions—it’s about helping businesses build smarter, stronger, and more sustainable teams.
               </p>
               
               <p>
@@ -55,7 +55,7 @@ const FounderSection: React.FC = () => {
               <p className="mt-8">
                 With gratitude,<br />
                 <span className="text-xl font-bold">Naveed Haq</span><br />
-                <span className="text-blue-200">naveed@goison.com</span>
+                <span className="text-blue-200">naveed@GoisOn.com</span>
               </p>
             </div>
           </motion.div>

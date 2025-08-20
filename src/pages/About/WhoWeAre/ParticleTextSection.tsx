@@ -17,7 +17,7 @@ interface Particle {
 
 const ParticleTextSection = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [text] = useState("Go Ison");
+  const [text] = useState("GoisOn");
   const [particles, setParticles] = useState<Particle[]>([]);
   const animationRef = useRef<number | null>(null);
   const imageDataRef = useRef<ImageData | null>(null);

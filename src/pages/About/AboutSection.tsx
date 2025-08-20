@@ -39,7 +39,7 @@ const AboutSection: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-900 to-gray-900 text-white relative">
+      <section className="h-[300px] flex flex-col justify-center items-center bg-gradient-to-br from-blue-900 to-gray-900 text-white relative">
         <motion.h1
           className="text-5xl font-bold mb-4"
           initial={{ opacity: 0, y: -50 }}
@@ -54,7 +54,7 @@ const AboutSection: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          At Go Ison, we’re your strategic talent partner—helping businesses across the U.S. build high-performing teams that drive lasting success.
+          At GoisOn, we’re your strategic talent partner—helping businesses across the U.S. build high-performing teams that drive lasting success.
         </motion.p>
       </section>
 

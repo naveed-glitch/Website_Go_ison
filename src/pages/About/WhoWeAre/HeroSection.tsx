@@ -66,7 +66,7 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          Go Ison isn’t just a staffing firm—we’re a partner who truly cares about the success of our clients and the professionals we connect. It may sound ambitious, but it’s the belief that inspires us every day to deliver meaningful, lasting impact.
+          GoisOn isn’t just a staffing firm—we’re a partner who truly cares about the success of our clients and the professionals we connect. It may sound ambitious, but it’s the belief that inspires us every day to deliver meaningful, lasting impact.
         </motion.p>
         
         <motion.button 

@@ -15,7 +15,7 @@ const ContactInfo: React.FC = () => {
       icon: <Mail className="w-6 h-6 text-blue-600" />,
       title: "Email us",
       content: "Get in touch via email",
-      details: "naveed@goison.com",
+      details: "naveed@GoisOn.com",
       action: "Send email"
     },
     {

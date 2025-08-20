@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
           className="mb-8"
         >
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
-            Go Ison
+            GoisOn
           </h1>
           <p className="text-xl md:text-2xl text-blue-200 max-w-3xl mx-auto">
              Connecting top-tier talent with forward-thinking organizations across the globe.

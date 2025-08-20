@@ -34,10 +34,10 @@ const AboutSection: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              About Go Ison IT Staffing
+              About GoisOn IT Staffing
             </h2>
             <p className="text-gray-700 text-lg mb-6">
-              At Go Ison, we specialize in delivering tailored IT staffing solutions across the U.S. and beyond. We connect businesses with skilled technology professionals who drive innovation, efficiency, and growth.
+              At GoisOn, we specialize in delivering tailored IT staffing solutions across the U.S. and beyond. We connect businesses with skilled technology professionals who drive innovation, efficiency, and growth.
             </p>
             <p className="text-gray-700 text-lg mb-8">
               Our expertise covers software development, cloud computing, cybersecurity, data science, and more. Whether supporting startups or Fortune 500 enterprises, we provide flexible, high-quality staffing solutions designed to meet evolving business needs.

@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 
 
 const teamMembers = [
-  { id: 1, name: "Sarah Johnson", title: "Chief Executive Officer", img: "/team/ceo.jpg" },
-  { id: 2, name: "Michael Chen", title: "Chief Technology Officer", img: "/team/cto.jpg" },
-  { id: 3, name: "David Rodriguez", title: "Chief Financial Officer", img: "/team/cfo.jpg" },
-  { id: 4, name: "Emma Williams", title: "Chief Marketing Officer", img: "/team/cmo.jpg" },
-  { id: 5, name: "James Wilson", title: "VP of Operations", img: "/team/vp-ops.jpg" },
-  { id: 6, name: "Olivia Thompson", title: "VP of Human Resources", img: "/team/vp-hr.jpg" },
-  { id: 7, name: "Robert Garcia", title: "VP of Sales", img: "/team/vp-sales.jpg" },
-  { id: 8, name: "Sophia Martinez", title: "VP of Client Services", img: "/team/vp-client.jpg" },
+  { id: 1, name: "Lubna", title: "Chief Executive Officer", img: "/team/ceo.jpg" },
+  { id: 2, name: "Haleema Iram", title: "Chief Technology Officer", img: "/team/cto.jpg" },
+  { id: 3, name: "Sofia Kabir", title: "Chief Financial Officer", img: "/team/cfo.jpg" },
+  { id: 4, name: "Taniya Shekhawat", title: "Chief Hiring Officer", img: "/team/cmo.jpg" },
+  // { id: 5, name: "James Wilson", title: "VP of Operations", img: "/team/vp-ops.jpg" },
+  // { id: 6, name: "Olivia Thompson", title: "VP of Human Resources", img: "/team/vp-hr.jpg" },
+  // { id: 7, name: "Robert Garcia", title: "VP of Sales", img: "/team/vp-sales.jpg" },
+  // { id: 8, name: "Sophia Martinez", title: "VP of Client Services", img: "/team/vp-client.jpg" },
 ];
 
 const container = {
@@ -43,7 +43,7 @@ export function ExecutiveTeam() {
             Executive Leadership Team
           </h2>
           <p className="mt-4 text-xl text-slate-600 max-w-3xl mx-auto">
-            Our experienced leaders drive innovation and excellence across all aspects of our organization.
+            Our leadership team brings experience, innovation, and vision—driving excellence and guiding Go Ison’s growth across every area of the organization.
           </p>
           <div className="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full" />
         </motion.div>

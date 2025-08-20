@@ -23,7 +23,7 @@ const TeamSection: React.FC = () => {
       name: "Sarah Johnson",
       position: "CEO & Founder",
       department: "Leadership",
-      bio: "With over 20 years of experience in the staffing industry, Sarah founded Go Ison with a vision to revolutionize talent acquisition.",
+      bio: "With over 20 years of experience in the staffing industry, Sarah founded GoisOn with a vision to revolutionize talent acquisition.",
       image: "https://images.unsplash.com/photo-1637009981125-89e30d29a627?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8U2FyYWglMjBKb2huc29ufGVufDB8fDB8fHww"
     },
     {
@@ -64,7 +64,7 @@ const TeamSection: React.FC = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Our Leadership</h2>
           <p className="text-blue-200 max-w-3xl mx-auto text-lg">
-            The experienced team driving Go Ison's vision and success
+            The experienced team driving GoisOn's vision and success
           </p>
         </motion.div>
 

@@ -10,8 +10,9 @@ import {
   Facebook,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Link } from "react-router-dom";
-import { Meteors } from "@/components/ui/meteors";
+
+const GOOGLE_SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbwj6tb4Ak_PvOXMEVyB_BPY0R_32-QHHHWT4Iec0nNPEeZkgCapPbIndCAI6ol4UoE/exec";
 
 const CTASection = () => {
   const [text, setText] = useState("");
@@ -19,9 +20,11 @@ const CTASection = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const messages = [
-    "Need Staffing Solutions?",
-  ];
+  const [form, setForm] = useState({ name: "", company: "", help: "" });
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
+
+  const messages = ["Need Staffing Solutions?"];
 
   useEffect(() => {
     const handleTyping = () => {
@@ -49,6 +52,40 @@ const CTASection = () => {
     return () => clearTimeout(timer);
   }, [text, isDeleting, loopNum]);
 
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setForm({ ...form, [e.target.id]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus("");
+
+    try {
+      const res = await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `Name=${encodeURIComponent(form.name)}&Company=${encodeURIComponent(
+          form.company
+        )}&Help=${encodeURIComponent(form.help)}`,
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        setStatus("✅ Submitted successfully!");
+        setForm({ name: "", company: "", help: "" });
+      } else {
+        setStatus("❌ " + data.error);
+      }
+    } catch {
+      setStatus("❌ Network error");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="w-full bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4">
       <div className="max-w-6xl mx-auto">
@@ -70,7 +107,8 @@ const CTASection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-gray-600 max-w-2xl mx-auto text-lg"
           >
-            We connect businesses with skilled professionals who drive results. Share your staffing needs, and we’ll deliver the right talent—fast.
+            We connect businesses with skilled professionals who drive results.
+            Share your staffing needs, and we’ll deliver the right talent—fast.
           </motion.p>
         </div>
 
@@ -85,10 +123,11 @@ const CTASection = () => {
                   <span className="inline-block w-1 h-8 bg-blue-600 ml-1 animate-pulse"></span>
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  Fill out the form and let’s start building your workforce today.
+                  Fill out the form and let’s start building your workforce
+                  today.
                 </p>
 
-                <form className="space-y-6">
+                <form className="space-y-6" onSubmit={handleSubmit}>
                   <div>
                     <label
                       htmlFor="name"
@@ -98,9 +137,12 @@ const CTASection = () => {
                     </label>
                     <input
                       id="name"
+                      value={form.name}
+                      onChange={handleChange}
                       type="text"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                       placeholder="Enter your full name"
+                      required
                     />
                   </div>
 
@@ -113,9 +155,12 @@ const CTASection = () => {
                     </label>
                     <input
                       id="company"
+                      value={form.company}
+                      onChange={handleChange}
                       type="text"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                       placeholder="Enter your company name"
+                      required
                     />
                   </div>
 
@@ -128,20 +173,36 @@ const CTASection = () => {
                     </label>
                     <textarea
                       id="help"
+                      value={form.help}
+                      onChange={handleChange}
                       rows={4}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                       placeholder="Describe your staffing needs"
-                    ></textarea>
+                      required
+                    />
                   </div>
 
                   <motion.button
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
+                    type="submit"
+                    disabled={loading}
+                    whileHover={!loading ? { scale: 1.02 } : {}}
+                    whileTap={!loading ? { scale: 0.98 } : {}}
                     className="w-full py-4 px-6 rounded-lg bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold text-lg flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow"
                   >
-                    S E N D
-                    <Send className="ml-2 h-5 w-5" />
+                    {loading ? (
+                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                    ) : (
+                      <>
+                        S E N D <Send className="ml-2 h-5 w-5" />
+                      </>
+                    )}
                   </motion.button>
+
+                  {status && (
+                    <p className="text-center text-sm mt-3 text-gray-600">
+                      {status}
+                    </p>
+                  )}
                 </form>
               </div>
             </CardContent>
@@ -163,7 +224,7 @@ const CTASection = () => {
                       <h4 className="font-semibold text-blue-100">
                         EMAIL ADDRESS
                       </h4>
-                      <p className="mt-1">naveed@goison.com</p>
+                      <p className="mt-1">naveed@GoisOn.com</p>
                     </div>
                   </div>
 
@@ -184,7 +245,7 @@ const CTASection = () => {
                     <div>
                       <h4 className="font-semibold text-blue-100">ADDRESS</h4>
                       <p className="mt-1">
-                        Go Ison LLC
+                        GoisOn LLC
                         <br />
                         2908 Jerrie Lane
                         <br />
@@ -194,8 +255,6 @@ const CTASection = () => {
                   </div>
                 </div>
               </CardContent>
-
-              <Meteors number={20} className="absolute inset-0 z-0" />
             </Card>
 
             {/* Social Media */}
@@ -205,24 +264,24 @@ const CTASection = () => {
                   Follow Us
                 </h3>
                 <div className="flex justify-center gap-4">
-                  <Link
-                    to="#"
+                  <a
+                    href="#"
                     className="bg-gray-100 hover:bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center transition-colors"
                   >
                     <Linkedin className="h-6 w-6" />
-                  </Link>
-                  <Link
-                    to="#"
+                  </a>
+                  <a
+                    href="#"
                     className="bg-gray-100 hover:bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center transition-colors"
                   >
                     <Twitter className="h-6 w-6" />
-                  </Link>
-                  <Link
-                    to="#"
+                  </a>
+                  <a
+                    href="#"
                     className="bg-gray-100 hover:bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center transition-colors"
                   >
                     <Facebook className="h-6 w-6" />
-                  </Link>
+                  </a>
                 </div>
               </CardContent>
             </Card>

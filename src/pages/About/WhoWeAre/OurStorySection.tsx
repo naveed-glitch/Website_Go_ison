@@ -55,7 +55,7 @@ const OurStorySection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              At Go Ison, we’ve always believed staffing should be about more than filling positions—it should be about building meaningful relationships and driving lasting impact.
+              At GoisOn, we’ve always believed staffing should be about more than filling positions—it should be about building meaningful relationships and driving lasting impact.
 
 Our journey began with a simple vision: to connect businesses with the right talent in a smarter, more innovative way. From those early steps to our growing global presence today, one thing has never changed—our commitment to people, progress, and partnerships.
             </motion.p>

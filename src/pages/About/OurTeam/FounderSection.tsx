@@ -51,12 +51,12 @@ export function FounderSection() {
                 href="#" 
                 className="text-blue-700 hover:text-blue-800 underline underline-offset-4 transition-colors"
               >
-                Martin E. Judge, Jr.
+                Naveed Haq
               </a>
             </h3>
             <p className="text-slate-600 leading-relaxed">
-              Mr. Martin E. Judge, Jr. is Chairman of the Board and Founder of The Judge Group, Inc. and its subsidiaries. 
-              He founded the company in 1970 and is regarded as a pioneer in the Human Capital Management and Staffing Industry.
+              Naveed Haq is the Founder and Chairman of Go Ison. With a vision to redefine the staffing industry, he established the company in 2025 to deliver innovative, people-focused workforce solutions.
+As a forward-thinking leader, Naveed is dedicated to building strong partnerships, driving sustainable growth, and empowering businesses with the right talent to succeed in a rapidly changing world.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">

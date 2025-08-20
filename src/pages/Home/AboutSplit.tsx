@@ -17,7 +17,7 @@ export default function AboutSplit() {
         More than just a recruitment partner
       </h2>
       <p className="text-gray-600 mb-4">
-        At Go Ison, we go beyond filling positions—we build long-term partnerships that fuel your business growth.
+        At GoisOn, we go beyond filling positions—we build long-term partnerships that fuel your business growth.
       </p>
       <p className="text-gray-600 mb-4">
         Whether you need a single hire or an entire team, we deliver scalable workforce solutions tailored to your goals. Our proven expertise ensures you get the right professionals, on time and aligned with your company culture.

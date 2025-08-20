@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
             <span className="text-blue-700 font-extrabold text-2xl tracking-tight">
-              Go Ison
+              GoisOn
             </span>
           </Link>
 

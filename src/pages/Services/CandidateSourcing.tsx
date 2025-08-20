@@ -65,7 +65,7 @@ const CandidateSourcing = () => {
               visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
             }}
           >
-            Candidate Sourcing
+            Talent Sourcing
           </motion.h1>
           <motion.p 
             className="text-xl md:text-2xl text-blue-100 mb-10 max-w-2xl mx-auto"
@@ -74,7 +74,7 @@ const CandidateSourcing = () => {
               visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.2 } }
             }}
           >
-            Innovative hiring solutions at your fingertips. Professional recruiters at your side.
+            Smart hiring solutions made simple. Access top candidates faster with expert support every step of the way.
           </motion.p>
           <motion.div
             variants={{
@@ -120,7 +120,7 @@ const CandidateSourcing = () => {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">How we work together with your business</h2>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">How We Partner With Your Business</h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
           </div>
           
@@ -133,7 +133,7 @@ const CandidateSourcing = () => {
 >
   <div>
     <p className="text-xl text-gray-600 mb-6">
-      At Robert Half, we bring technology and people together to help you find talent and solve your business challenges faster – whether you've used a talent solutions provider before or not.
+      We combine people and technology to help you discover top talent and overcome challenges quickly—whether it’s your first time working with a staffing partner or not.
     </p>
     <div className="flex flex-col gap-4">
       <div className="flex items-start">
@@ -141,8 +141,8 @@ const CandidateSourcing = () => {
           <User className="text-blue-600" size={24} />
         </div>
         <div>
-          <h3 className="font-bold text-lg text-gray-800">Expert Recruiters</h3>
-          <p className="text-gray-600">Industry-specialized recruiters with deep market knowledge</p>
+          <h3 className="font-bold text-lg text-gray-800">Skilled Expert</h3>
+          <p className="text-gray-600">Industry specialists with strong market knowledge to guide your hiring.</p>
         </div>
       </div>
       <div className="flex items-start">
@@ -150,8 +150,8 @@ const CandidateSourcing = () => {
           <Search className="text-blue-600" size={24} />
         </div>
         <div>
-          <h3 className="font-bold text-lg text-gray-800">Advanced Sourcing</h3>
-          <p className="text-gray-600">Proprietary technology to identify top talent efficiently</p>
+          <h3 className="font-bold text-lg text-gray-800">Smart Sourcing</h3>
+          <p className="text-gray-600">Innovative tools to identify and connect with the right candidates efficiently.</p>
         </div>
       </div>
       <div className="flex items-start">
@@ -159,8 +159,8 @@ const CandidateSourcing = () => {
           <Users className="text-blue-600" size={24} />
         </div>
         <div>
-          <h3 className="font-bold text-lg text-gray-800">Diverse Talent Pools</h3>
-          <p className="text-gray-600">Access to qualified candidates across all industries</p>
+          <h3 className="font-bold text-lg text-gray-800">Wide Talent Network</h3>
+          <p className="text-gray-600">Access to diverse, qualified professionals across multiple industries.</p>
         </div>
       </div>
     </div>
@@ -180,7 +180,7 @@ const CandidateSourcing = () => {
       viewport={{ once: true }}
     >
       <h3 className="font-bold text-xl mb-2">97% Client Satisfaction</h3>
-      <p>Based on our 2023 client survey results</p>
+      <p>Based on our latest client survey.</p>
     </motion.div>
   </div>
 </motion.div>
@@ -192,9 +192,9 @@ const CandidateSourcing = () => {
       <section className="py-20 bg-gradient-to-r from-blue-50 to-gray-100">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Choose how you want to work with us</h2>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Decide How You Want to Partner With Us</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Flexible solutions tailored to your specific hiring needs
+              Flexible options tailored to your hiring goals
             </p>
           </div>
           
@@ -213,7 +213,7 @@ const CandidateSourcing = () => {
                 <h3 className="text-2xl font-bold text-gray-800">Staffing Solutions</h3>
               </div>
               <p className="text-gray-600 mb-6">
-                Need staffing solutions? We'll handle the details for you. Our team will find you the best available candidates in your specialization.
+                Looking for staffing support? We’ll take care of the details while you get access to the best-fit candidates in your field.
               </p>
               <ul className="mb-8 space-y-3">
                 {['Finance and accounting', 'Administrative and customer support', 'Technology', 'Marketing and creative', 'Legal'].map((item, index) => (
@@ -240,10 +240,10 @@ const CandidateSourcing = () => {
                 <h3 className="text-2xl font-bold">Full-Service Consulting</h3>
               </div>
               <p className="mb-6 text-blue-100">
-                For a broader approach, we've got you covered with Prointi, our full-service consulting business. We'll work with you to deliver integrated solutions.
+                For a more comprehensive approach, our consulting team partners with you to design and deliver end-to-end workforce solutions.
               </p>
               <div className="bg-blue-800 p-5 rounded-lg mb-6">
-                <h4 className="font-bold mb-2">Prointi Consulting Benefits:</h4>
+                <h4 className="font-bold mb-2">Consulting Advantages:</h4>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <Check className="text-green-400 mr-2 mt-1" size={18} />
@@ -251,7 +251,7 @@ const CandidateSourcing = () => {
                   </li>
                   <li className="flex items-start">
                     <Check className="text-green-400 mr-2 mt-1" size={18} />
-                    <span>Talent acquisition transformation</span>
+                    <span>Modern talent acquisition strategies</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="text-green-400 mr-2 mt-1" size={18} />
@@ -281,7 +281,7 @@ const CandidateSourcing = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              DOUBLE YOUR PLACEMENTS
+              Boost Your Hiring Success
             </motion.h2>
             <motion.p 
               className="text-xl text-blue-100 max-w-3xl mx-auto"
@@ -290,7 +290,7 @@ const CandidateSourcing = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              Find and place talent faster with our AI-powered platform
+              Accelerate talent placement with our AI-powered platform
             </motion.p>
           </div>
           
@@ -317,15 +317,15 @@ const CandidateSourcing = () => {
               viewport={{ once: true }}
             >
               <p className="text-blue-100 text-lg mb-8">
-                Ceipal harnesses the power of AI to unify all your sources, enabling you to find and engage talent quickly and effectively, while gaining critical insights into your processes.
+                Leverage the strength of AI to centralize all your sourcing channels, helping you discover and engage top talent faster and smarter — while unlocking powerful insights to optimize your recruitment process.
               </p>
               
               <div className="space-y-6">
                 {[
-                  "Elevate the quality of candidates as measured by your score card",
-                  "Reduce time-to-submission by 70%",
-                  "Improve the client and candidate experiences",
-                  "Enable recruiters, managers, and executives to track vital business metrics"
+                  "Improve candidate quality with AI-driven scoring",
+                  "Cut submission time by 70% for faster results",
+                  "Enhance experiences for both clients and candidates",
+                  "Empower teams with data-driven metrics and reporting"
                 ].map((item, index) => (
                   <motion.div 
                     key={index}
@@ -359,7 +359,7 @@ const CandidateSourcing = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              ADOPT QUICKLY & EASILY
+              Get Started Fast & Smooth
             </motion.h2>
             <motion.h3 
               className="text-2xl text-blue-600"
@@ -368,7 +368,7 @@ const CandidateSourcing = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              Migrate seamlessly
+              Seamless migration made simple
             </motion.h3>
           </div>
           
@@ -380,15 +380,15 @@ const CandidateSourcing = () => {
               viewport={{ once: true }}
             >
               <p className="text-gray-600 text-lg mb-8">
-                Ceipal technology is user-friendly, customized, and easy to adopt. We make it simple to improve your processes and grow your business.
+                Our platform is built to be intuitive, customizable, and quick to adopt — helping you streamline processes and scale your business with ease.
               </p>
               
               <div className="space-y-6">
                 {[
-                  { title: "Tailored ATS Solution", desc: "Meets your specific business needs" },
-                  { title: "Built-in Integrations", desc: "Connect with 200+ systems and tools" },
-                  { title: "Structured Migration", desc: "Smooth transition with minimal disruption" },
-                  { title: "Premium Support", desc: "Highest-rated customer support in the industry" }
+                  { title: "Custom ATS Setup", desc: "Designed to match your exact business requirements" },
+                  { title: "Easy Integrations", desc: "Connect effortlessly with 200+ tools and platforms" },
+                  { title: "Hassle-Free Migration", desc: "Switch systems smoothly with minimal downtime" },
+                  { title: "Dedicated Support", desc: "24/7 expert assistance to keep you running strong" }
                 ].map((item, index) => (
                   <motion.div 
                     key={index}
@@ -437,7 +437,7 @@ const CandidateSourcing = () => {
   >
     <div className="text-center">
       <div className="text-4xl font-bold text-blue-600 mb-2">165+</div>
-      <div className="text-lg font-semibold text-gray-800">INTEGRATIONS</div>
+      <div className="text-lg font-semibold text-gray-800">Integrations Available</div>
     </div>
   </motion.div>
 </motion.div>
@@ -473,7 +473,7 @@ const CandidateSourcing = () => {
         >
           <div className="text-center text-white">
             <div className="text-3xl font-bold mb-1">20%</div>
-            <div className="text-sm">Business from sub-suppliers</div>
+            <div className="text-sm">of business from sub-suppliers</div>
           </div>
         </motion.div>
 
@@ -486,7 +486,7 @@ const CandidateSourcing = () => {
         >
           <div className="text-center text-white">
             <div className="text-3xl font-bold mb-1">40%</div>
-            <div className="text-sm">Average cost reduction</div>
+            <div className="text-sm">average cost savings</div>
           </div>
         </motion.div>
       </motion.div>
@@ -497,21 +497,21 @@ const CandidateSourcing = () => {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-4xl font-bold mb-6">Increase Profitability</h2>
-        <h3 className="text-2xl text-blue-300 mb-8">Efficiently manage sub-suppliers</h3>
+        <h2 className="text-4xl font-bold mb-6">Boost Your Profitability</h2>
+        <h3 className="text-2xl text-blue-300 mb-8">Smarter management of sub-suppliers</h3>
 
         <p className="text-blue-100 mb-8">
-          Up to 20% of your business can come from sub-suppliers. Ceipal Procurewise offers a strategic solution with a robust VMS that provides the structure and processes to manage all that data.
+          Did you know up to 20% of your business can come from sub-suppliers? Our powerful VMS gives you the structure and tools to manage everything seamlessly while cutting costs.
         </p>
 
         <div className="space-y-4 mb-8">
           <div className="flex items-start">
             <Check className="text-green-400 mr-3 mt-1" size={20} />
-            <span>Utilize automated, streamlined reporting and cost management tools</span>
+            <span>Automate reporting and streamline cost management</span>
           </div>
           <div className="flex items-start">
             <Check className="text-green-400 mr-3 mt-1" size={20} />
-            <span>Effortlessly manage partners and sub-suppliers to grow your candidate pool and increase submissions</span>
+            <span>Easily oversee partners and sub-suppliers to expand your candidate pool and maximize submissions</span>
           </div>
         </div>
       </motion.div>
@@ -524,9 +524,9 @@ const CandidateSourcing = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Integrate your key technology solutions</h2>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Seamlessly Connect Your Essential Tools</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ceipal connects staffing and recruiting firms to productivity apps, vendor management, social media, job board solutions, and more with ease.
+              We integrate staffing and recruiting platforms with productivity apps, vendor management systems, social media, job boards, and more—making your workflow simple and efficient.
             </p>
           </div>
           

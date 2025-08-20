@@ -30,7 +30,7 @@ const SharedValuesSection: React.FC = () => {
   ];
 
   return (
-    <div className="relative min-h-screen bg-[#1e3a8a] py-24 px-4">
+    <div className="relative min-h-screen bg-blue-900 py-24 px-4">
       <div className="relative z-10 container mx-auto max-w-4xl">
         {/* Section Heading */}
         <motion.h2
@@ -59,7 +59,7 @@ const SharedValuesSection: React.FC = () => {
           {values.map((value, index) => (
             <motion.div
               key={index}
-              className="bg-blue-900/30 backdrop-blur-sm p-8 rounded-2xl border border-blue-700/30"
+              className="bg-blue-800 backdrop-blur-sm p-8 rounded-2xl border border-blue-700/30"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

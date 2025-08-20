@@ -7,8 +7,10 @@ import {
   FaChartLine, FaGlobe, FaHeadset, FaUserTie,
   FaBriefcase, FaCalendarAlt, FaCheckCircle, 
 } from 'react-icons/fa';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyk1HCZXqBC4S7fJDbcUMxAIpvp-ERfekLeURrjiaAeCU9_MUdlFjKclKippqq7RqS1YQ/exec"
 
 
 const WhatWeDo = () => {
@@ -18,6 +20,48 @@ const WhatWeDo = () => {
     target: ref,
     offset: ["start start", "end start"]
   });
+  const [form, setForm] = useState({
+    firstName: "",
+    lastName: "",
+    businessName: "",
+    phone: "",
+  });
+  
+  const [status, setStatus] = useState("");
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("⏳ Submitting...");
+
+    try {
+      const body = new URLSearchParams();
+      body.append("FirstName", form.firstName);
+      body.append("LastName", form.lastName);
+      body.append("BusinessName", form.businessName);
+      body.append("Phone", form.phone);
+
+      const res = await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: body.toString(),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setStatus("✅ Submitted successfully!");
+        setForm({ firstName: "", lastName: "", businessName: "", phone: "" });
+      } else {
+        setStatus("❌ Something went wrong.");
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("⚠️ Network error. Try again.");
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
   
   const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   
@@ -90,7 +134,7 @@ const WhatWeDo = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Not Your Average Staffing Agency
+            More Than Just a Staffing Agency
           </motion.h1>
           
           <motion.p 
@@ -99,7 +143,7 @@ const WhatWeDo = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            We go above and beyond to handle the search, candidate curation, onboarding, and payroll
+            We go the extra mile to manage every step of the process — from talent search and candidate selection to onboarding and payroll management.
           </motion.p>
           
           <motion.div
@@ -143,9 +187,9 @@ const WhatWeDo = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <div className="text-5xl font-bold text-blue-600 mb-4">3,000+</div>
-              <div className="text-xl font-semibold text-gray-800">Experienced Recruiters</div>
-              <p className="text-gray-600 mt-2">Covering all skillsets and industries</p>
+              <div className="text-5xl font-bold text-blue-600 mb-4">50+</div>
+              <div className="text-xl font-semibold text-gray-800">Tech Experts in Our Network</div>
+              <p className="text-gray-600 mt-2">Skilled professionals ready to power innovation for our clients.</p>
             </motion.div>
             
             <motion.div 
@@ -155,9 +199,9 @@ const WhatWeDo = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <div className="text-5xl font-bold text-blue-600 mb-4">50+</div>
-              <div className="text-xl font-semibold text-gray-800">Countries</div>
-              <p className="text-gray-600 mt-2">International services for global talent sourcing</p>
+              <div className="text-5xl font-bold text-blue-600 mb-4">2-10</div>
+              <div className="text-xl font-semibold text-gray-800">Countries & Expanding</div>
+              <p className="text-gray-600 mt-2">Starting strong with a global vision to serve businesses worldwide.</p>
             </motion.div>
             
             <motion.div 
@@ -168,8 +212,8 @@ const WhatWeDo = () => {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <div className="text-5xl font-bold text-blue-600 mb-4">Pay Only</div>
-              <div className="text-xl font-semibold text-gray-800">After Success</div>
-              <p className="text-gray-600 mt-2">You pay only after your candidate starts</p>
+              <div className="text-xl font-semibold text-gray-800">For Results</div>
+              <p className="text-gray-600 mt-2">No upfront costs — you invest only when we deliver successful hires.</p>
             </motion.div>
           </div>
           
@@ -195,7 +239,7 @@ const WhatWeDo = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        Get in Touch
+        Let’s Connect
       </motion.h3>
       <motion.p
         className="text-lg text-gray-600 mb-6"
@@ -204,9 +248,9 @@ const WhatWeDo = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.4 }}
       >
-        Have questions or need assistance? Our team is here to help.
-        Call us toll-free:{" "}
-        <span className="font-bold text-blue-600">855-485-8853</span>
+        Got questions or looking for support? Our team is ready to assist you.
+        Reach us anytime at:{" "}
+        <span className="font-bold text-blue-600">312-973-6111</span>
       </motion.p>
       <motion.button
         className="mt-6 bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-all transform hover:-translate-y-1"
@@ -248,7 +292,7 @@ const WhatWeDo = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Our Unique Omni-Channel Approach
+              Our Smart Omni-Channel Approach
             </motion.h2>
             <motion.p 
               className="text-lg text-gray-600 max-w-3xl mx-auto"
@@ -257,7 +301,7 @@ const WhatWeDo = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              We combine modern technology and time-tested methods to provide the most robust approach to fulfilling your recruitment needs
+              We blend cutting-edge technology with proven strategies to deliver the most effective solutions for your staffing and workforce needs.
             </motion.p>
           </div>
           
@@ -269,16 +313,16 @@ const WhatWeDo = () => {
               transition={{ duration: 0.8 }}
             >
               <div className="bg-white rounded-2xl shadow-lg p-8">
-                <h3 className="text-2xl font-bold text-gray-800 mb-6">Helping to manage your business</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-6">Helping You Scale Smarter</h3>
                 <p className="text-gray-600 mb-8">
-                  We work hard to maximize efficiency and cost savings. We offer three primary recruitment management models operating within our omni-channel approach.
+                  We focus on efficiency, agility, and growth. Our omni-channel approach offers three core solutions to support your business success:
                 </p>
                 
                 <div className="space-y-6">
                   {[
-                    { icon: <FaSearch className="text-blue-500" />, title: "Talent Sourcing", description: "Advanced techniques to find the perfect candidates" },
-                    { icon: <FaUsers className="text-blue-500" />, title: "Candidate Management", description: "Comprehensive tracking and communication system" },
-                    { icon: <FaChartLine className="text-blue-500" />, title: "Performance Analytics", description: "Data-driven insights to optimize your hiring" }
+                    { icon: <FaSearch className="text-blue-500" />, title: "Talent Sourcing", description: "Innovative methods to connect you with the right-fit professionals." },
+                    { icon: <FaUsers className="text-blue-500" />, title: "Candidate Management", description: "Streamlined tracking and seamless communication tools." },
+                    { icon: <FaChartLine className="text-blue-500" />, title: "Performance Analytics", description: "Actionable, data-driven insights to strengthen your hiring decisions." }
                   ].map((item, index) => (
                     <motion.div 
                       key={index}
@@ -318,10 +362,10 @@ const WhatWeDo = () => {
                 
                 <div className="space-y-4 mb-8">
                   <p className="text-gray-600">
-                    Our omni-channel approach allows us to match you with perfect-fit candidates, build custom solutions, and deliver fast results.
+                    Our omni-channel model ensures access to top talent worldwide, customized solutions, and quick results.
                   </p>
                   <p className="text-gray-600">
-                    We source talent in over 50 countries, providing both small-scale and large-scale international services.
+                    We operate in 50+ countries, serving startups, growing businesses, and enterprises with both local and global hiring needs.
                   </p>
                 </div>
                 
@@ -373,11 +417,11 @@ const WhatWeDo = () => {
             
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
               {[
-                { number: 1, title: "Reach Out", description: "Submit a staffing request & tell us what you're looking for", icon: <FaHeadset /> },
-                { number: 2, title: "Connect", description: "Your dedicated Hiring Partner reaches out to discuss your needs", icon: <FaHandshake /> },
-                { number: 3, title: "Review Candidates", description: "We search, screen, & share a curated list of qualified candidates", icon: <FaUserTie /> },
-                { number: 4, title: "Interview & Offer", description: "We'll schedule interviews & help you extend an offer", icon: <FaBriefcase /> },
-                { number: 5, title: "Hire & Onboard", description: "Hire your candidate & let us handle onboarding", icon: <FaCheckCircle /> }
+                { number: 1, title: "Get in Touch", description: "Share your staffing needs and requirements with us.", icon: <FaHeadset /> },
+                { number: 2, title: "Discovery Call", description: "Your dedicated partner connects with you to understand your goals.", icon: <FaHandshake /> },
+                { number: 3, title: "Curated Shortlist", description: "We source, evaluate, and present the best-fit candidates for your review.", icon: <FaUserTie /> },
+                { number: 4, title: "Interview & Select", description: "We coordinate interviews and guide you through the offer stage.", icon: <FaBriefcase /> },
+                { number: 5, title: "Hire & Launch", description: "Bring your new hire onboard while we handle the setup and smooth onboarding.", icon: <FaCheckCircle /> }
               ].map((step, index) => (
                 <motion.div 
                   key={index}
@@ -425,7 +469,7 @@ const WhatWeDo = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Flexible staffing solutions tailored to your specific requirements
+              Flexible staffing solutions customized for your unique goals.
             </motion.p>
           </div>
           
@@ -434,20 +478,20 @@ const WhatWeDo = () => {
               {
                 title: "Short-Term Contracts",
                 icon: <FaFileContract className="text-blue-500" />,
-                description: "We find the right fit even for short engagements, ensuring quality and compatibility.",
-                features: ["Project-based staffing", "Temporary solutions", "Quick turnaround"]
+                description: "Sustainable partnerships that deliver ongoing results with the right culture and skills.",
+                features: ["Agile project staffing", "Temporary coverage", "Fast deployment"]
               },
               {
                 title: "Long-Term Contracts",
                 icon: <FaChartLine className="text-blue-500" />,
                 description: "Finding the right culture fit with the skills and work ethic to deliver long-term success.",
-                features: ["Extended engagements", "Team integration", "Cultural alignment"]
+                features: ["Extended support", "Seamless team integration", "Strong cultural fit"]
               },
               {
                 title: "Direct Placement",
                 icon: <FaUserTie className="text-blue-500" />,
-                description: "Finding the perfect person for your organization, from C-suite to entry-level positions.",
-                features: ["Permanent hires", "Executive search", "Specialized recruitment"]
+                description: "Find the right permanent hire, from entry-level to executive leadership.",
+                features: ["Permanent roles", "Leadership search", "Specialized talent matching"]
               }
             ].map((service, index) => (
               <motion.div
@@ -518,11 +562,11 @@ const WhatWeDo = () => {
                 }}
               >
                 {[
-                  "We work for YOU – providing customized staffing solutions built for your unique business needs",
-                  "We bring the human element back to the job placement process. We select each candidate to fit YOUR job opening",
-                  "We'll always respond to staffing requests within the hour during normal business hours",
-                  "We go beyond identifying talent. We handle the entire process from search to payroll",
-                  "We partner with you to understand your culture and find candidates who will thrive in your environment"
+                  "We’re on your side—tailoring staffing solutions around your exact business goals.",
+                  "People first: every candidate is hand-picked to match your role and team.",
+                  "During business hours, expect a response within 60 minutes—every time.",
+                  "End-to-end support: from sourcing and screening to onboarding and payroll.",
+                  "We learn your culture and deliver talent who thrives in it."
                 ].map((item, index) => (
                   <motion.li 
                     key={index}
@@ -563,40 +607,83 @@ const WhatWeDo = () => {
               <h3 className="text-2xl font-bold mb-6">Hire With Confidence</h3>
               
               <p className="text-blue-100 mb-8">
-                We work for you, providing customized solutions built within your budget, to match your unique staffing requirements.
+                We design flexible staffing plans that fit your budget and timeline—so you get the right people, right away.
               </p>
               
-              <div className="bg-white rounded-xl p-6 text-gray-800">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">FIRST NAME*</label>
-                    <input type="text" className="w-full p-3 border border-gray-300 rounded-lg" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">LAST NAME*</label>
-                    <input type="text" className="w-full p-3 border border-gray-300 rounded-lg" />
-                  </div>
-                </div>
-                
-                <div className="mb-6">
-                  <label className="block text-sm font-medium text-gray-700 mb-1">BUSINESS NAME*</label>
-                  <input type="text" className="w-full p-3 border border-gray-300 rounded-lg" />
-                </div>
-                
-                <div className="mb-6">
-                  <label className="block text-sm font-medium text-gray-700 mb-1">PHONE NUMBER*</label>
-                  <input type="tel" className="w-full p-3 border border-gray-300 rounded-lg" />
-                </div>
-                
-                {/* <div className="text-sm text-gray-500 mb-6">
-                  <span>Job seeker? </span>
-                  <a href="#" className="text-blue-600 hover:underline">Visit our jobs page</a>
-                </div> */}
-                
-                <button className="w-full bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition-all">
-                  Hire Someone
-                </button>
-              </div>
+              <form
+      onSubmit={handleSubmit}
+      className="bg-white rounded-xl p-6 text-gray-800 max-w-lg mx-auto"
+    >
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            FIRST NAME*
+          </label>
+          <input
+            type="text"
+            name="firstName"
+            value={form.firstName}
+            onChange={handleChange}
+            required
+            className="w-full p-3 border border-gray-300 rounded-lg"
+          />
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            LAST NAME*
+          </label>
+          <input
+            type="text"
+            name="lastName"
+            value={form.lastName}
+            onChange={handleChange}
+            required
+            className="w-full p-3 border border-gray-300 rounded-lg"
+          />
+        </div>
+      </div>
+
+      <div className="mb-6">
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          BUSINESS NAME*
+        </label>
+        <input
+          type="text"
+          name="businessName"
+          value={form.businessName}
+          onChange={handleChange}
+          required
+          className="w-full p-3 border border-gray-300 rounded-lg"
+        />
+      </div>
+
+      <div className="mb-6">
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          PHONE NUMBER*
+        </label>
+        <input
+          type="tel"
+          name="phone"
+          value={form.phone}
+          onChange={handleChange}
+          required
+          className="w-full p-3 border border-gray-300 rounded-lg"
+        />
+      </div>
+
+      <button
+        type="submit"
+        className="w-full bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition-all"
+      >
+        Hire Someone
+      </button>
+
+      {status && (
+        <p className="mt-4 text-center text-sm font-medium text-gray-600">
+          {status}
+        </p>
+      )}
+    </form>
             </motion.div>
           </div>
         </div>
