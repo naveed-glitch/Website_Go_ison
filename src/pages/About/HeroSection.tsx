@@ -2,6 +2,7 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Briefcase } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
   const ref = useRef(null);
@@ -58,6 +59,7 @@ const HeroSection: React.FC = () => {
           We connect companies with top IT professionals, delivering tailored staffing solutions that accelerate innovation and digital growth.
         </motion.p>
 
+        <Link to={'/contact'}>
         <motion.button
           className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
           whileHover={{ scale: 1.05 }}
@@ -65,6 +67,7 @@ const HeroSection: React.FC = () => {
         >
           Find Your Talent
         </motion.button>
+        </Link>
       </motion.div>
 
       {/* Animated icons (optional – you can replace with tech-themed icons if available) */}

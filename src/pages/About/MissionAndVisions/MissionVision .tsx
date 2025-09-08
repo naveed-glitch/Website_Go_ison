@@ -1,5 +1,6 @@
 
 import { motion } from 'framer-motion';
+import { FaShieldAlt } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 
 const MissionVision: React.FC = () => {
@@ -44,7 +45,7 @@ const MissionVision: React.FC = () => {
           </p>
         </motion.div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-12">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -70,7 +71,7 @@ const MissionVision: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="bg-white p-8 rounded-2xl shadow-xl"
           >
-            <div className="flex items-center mb-6">
+            <div className="flex items-center mb-3">
               <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
@@ -84,7 +85,7 @@ const MissionVision: React.FC = () => {
           </motion.div>
         </div>
         
-        <motion.div
+        {/* <motion.div
           variants={container}
           initial="hidden"
           animate={inView ? "show" : ""}
@@ -94,7 +95,26 @@ const MissionVision: React.FC = () => {
           <p className="text-gray-700 max-w-3xl mx-auto mb-12 text-lg">
             Our values define how we work and how we partner with clients, employees, and communities. They shape our culture, influence every decision, and keep us focused on delivering impact with integrity.
           </p>
-        </motion.div>
+        </motion.div> */}
+        <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8 }}
+            className="bg-white p-8 rounded-2xl shadow-xl w-[600px] mb-12 mx-auto"
+          >
+            <div className="flex items-center">
+              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                {/* <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg> */}
+                <FaShieldAlt className="text-blue-600 text-xl" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900">Our Core Values</h3>
+            </div>
+            <p className="text-gray-700 text-lg">
+              Our values define how we work and how we partner with clients, employees, and communities. They shape our culture, influence every decision, and keep us focused on delivering impact with integrity.
+            </p>
+          </motion.div>
         
         <motion.div 
           variants={container}

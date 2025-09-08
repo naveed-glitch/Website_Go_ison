@@ -1,6 +1,7 @@
 // src/components/HeroSection.tsx
 import  { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   const ref = useRef(null);
@@ -69,6 +70,7 @@ const HeroSection = () => {
           GoisOn isn’t just a staffing firm—we’re a partner who truly cares about the success of our clients and the professionals we connect. It may sound ambitious, but it’s the belief that inspires us every day to deliver meaningful, lasting impact.
         </motion.p>
         
+        <Link to={'/contact'}>
         <motion.button 
           className="bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105"
           initial={{ opacity: 0 }}
@@ -81,6 +83,7 @@ const HeroSection = () => {
         >
           See How We Help
         </motion.button>
+        </Link>
       </motion.div>
       
       {/* Scrolling indicator */}

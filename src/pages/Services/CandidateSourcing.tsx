@@ -59,7 +59,7 @@ const CandidateSourcing = () => {
           animate={heroControls}
         >
           <motion.h1 
-            className="text-5xl md:text-7xl font-bold text-white mb-6"
+            className="text-5xl md:text-7xl font-bold text-blue-100 mb-6"
             variants={{
               hidden: { opacity: 0, y: 30 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
@@ -68,7 +68,7 @@ const CandidateSourcing = () => {
             Talent Sourcing
           </motion.h1>
           <motion.p 
-            className="text-xl md:text-2xl text-blue-100 mb-10 max-w-2xl mx-auto"
+            className="text-xl md:text-3xl text-blue-900 mb-10 max-w-2xl mx-auto font-bold"
             variants={{
               hidden: { opacity: 0, y: 30 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.2 } }
@@ -535,19 +535,19 @@ const CandidateSourcing = () => {
             className="flex overflow-x-hidden py-8 mb-12"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
+            // transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
             <div className="flex animate-marquee whitespace-nowrap">
               {['Twilio', 'LinkedIn', 'iMocha', 'HelloVerify', 'Monster', 'TextToHire', 'Indeed', 'Glassdoor', 'Workday', 'Bullhorn', 'Jobvite', 'Greenhouse'].map((partner, index) => (
-                <div key={index} className="mx-8 bg-white p-6 rounded-xl shadow-md flex items-center justify-center w-48 h-24">
-                  <span className="font-semibold text-gray-700">{partner}</span>
+                <div key={index} className="mx-8 bg-blue-100 p-6 rounded-xl shadow-md flex items-center justify-center w-48 h-24">
+                  <span className="font-bold text-gray-900">{partner}</span>
                 </div>
               ))}
             </div>
             <div className="flex animate-marquee2 whitespace-nowrap">
               {['Twilio', 'LinkedIn', 'iMocha', 'HelloVerify', 'Monster', 'TextToHire', 'Indeed', 'Glassdoor', 'Workday', 'Bullhorn', 'Jobvite', 'Greenhouse'].map((partner, index) => (
-                <div key={index} className="mx-8 bg-white p-6 rounded-xl shadow-md flex items-center justify-center w-48 h-24">
+                <div key={index} className="mx-8 bg-blue-100 p-6 rounded-xl shadow-md flex items-center justify-center w-48 h-24">
                   <span className="font-semibold text-gray-700">{partner}</span>
                 </div>
               ))}

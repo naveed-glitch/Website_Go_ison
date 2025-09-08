@@ -9,6 +9,7 @@ import {
 } from 'react-icons/fa';
 import { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyk1HCZXqBC4S7fJDbcUMxAIpvp-ERfekLeURrjiaAeCU9_MUdlFjKclKippqq7RqS1YQ/exec"
 
@@ -252,6 +253,7 @@ const WhatWeDo = () => {
         Reach us anytime at:{" "}
         <span className="font-bold text-blue-600">312-973-6111</span>
       </motion.p>
+      <Link to={'/contact'}>
       <motion.button
         className="mt-6 bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-all transform hover:-translate-y-1"
         initial={{ scale: 0.9 }}
@@ -261,6 +263,8 @@ const WhatWeDo = () => {
       >
         Submit A Staffing Request
       </motion.button>
+      </Link>
+      
     </div>
   </div>
 
@@ -733,7 +737,7 @@ const WhatWeDo = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <motion.h3 
-              className="text-lg font-semibold text-gray-500 uppercase tracking-wider"
+              className="text-3xl font-bold text-gray-900 uppercase tracking-wider"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -747,7 +751,7 @@ const WhatWeDo = () => {
             {["Santander", "UnitedHealth Group", "CVS Health", "Meta", "Google", "Microsoft"].map((company, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-xl p-6 shadow-md flex items-center justify-center"
+                className="bg-blue-100 rounded-xl p-6 shadow-md flex items-center justify-center"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}

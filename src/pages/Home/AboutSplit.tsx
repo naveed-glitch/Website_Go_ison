@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function AboutSplit() {
   return (
@@ -27,6 +28,7 @@ export default function AboutSplit() {
       </p>
 
       {/* Animated Button */}
+      <Link to={'/contact'}>
       <motion.button
         whileHover={{
           scale: 1.05,
@@ -39,6 +41,7 @@ export default function AboutSplit() {
       >
         Partner With Us
       </motion.button>
+      </Link>
     </motion.div>
 
     {/* Right: Full Image */}

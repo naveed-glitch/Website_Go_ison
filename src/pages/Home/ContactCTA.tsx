@@ -211,16 +211,16 @@ const CTASection = () => {
           {/* Contact Info & Social */}
           <div className="flex-1 flex flex-col gap-4 justify-start">
             {/* Contact Card */}
-            <Card className="relative overflow-hidden h-full">
+            <Card className="relative overflow-hidden h-[65%]">
               <CardContent className="bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-xl p-8 h-full relative z-10">
                 <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
 
-                <div className="space-y-5">
+                <div className="space-y-10">
                   <div className="flex items-start">
                     <div className="bg-blue-500 p-3 rounded-lg mr-4">
                       <Mail className="h-6 w-6" />
                     </div>
-                    <div>
+                    <div className="text-left">
                       <h4 className="font-semibold text-blue-100">
                         EMAIL ADDRESS
                       </h4>
@@ -232,7 +232,7 @@ const CTASection = () => {
                     <div className="bg-blue-500 p-3 rounded-lg mr-4">
                       <Phone className="h-6 w-6" />
                     </div>
-                    <div>
+                    <div className="text-left">
                       <h4 className="font-semibold text-blue-100">PHONE</h4>
                       <p className="mt-1">+1 312 973 6111</p>
                     </div>
@@ -242,14 +242,10 @@ const CTASection = () => {
                     <div className="bg-blue-500 p-3 rounded-lg mr-4">
                       <MapPin className="h-6 w-6" />
                     </div>
-                    <div>
+                    <div className="text-left">
                       <h4 className="font-semibold text-blue-100">ADDRESS</h4>
                       <p className="mt-1">
-                        GoisOn LLC
-                        <br />
-                        2908 Jerrie Lane
-                        <br />
-                        Glenview, IL 60025
+                        GoisOn LLC 2908 Jerrie Lane Glenview, IL 60025 
                       </p>
                     </div>
                   </div>
@@ -259,7 +255,7 @@ const CTASection = () => {
 
             {/* Social Media */}
             <Card>
-              <CardContent className="p-8">
+              <CardContent className="p-[44px]">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
                   Follow Us
                 </h3>
