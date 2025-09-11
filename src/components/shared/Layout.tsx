@@ -2,6 +2,7 @@
 import React, { type ReactNode } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import FloatingContact from "./Floating_Icon";
 
 interface LayoutProps {
   children: ReactNode;
@@ -13,6 +14,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Navbar />
       <main className="flex-1">{children}</main>
       <Footer />
+      <FloatingContact/>
     </div>
   );
 };
