@@ -29,7 +29,7 @@ const MissionVision: React.FC = () => {
       {/* Parallax Background */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-1/3 bg-blue-900 opacity-10"></div>
-        <div className="absolute bottom-0 right-0 w-2/3 h-2/3 bg-gray-900 opacity-5"></div>
+        <div className="absolute bottom-0 right-0 w-full h-2/3 bg-blue-900 opacity-10"></div>
       </div>
       
       <div className="max-w-7xl mx-auto relative">

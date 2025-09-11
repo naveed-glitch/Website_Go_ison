@@ -30,7 +30,7 @@ const ContactInfo: React.FC = () => {
 
   return (
     <motion.div
-      className="bg-gradient-to-br from-blue-50 to-slate-100 rounded-xl shadow-xl p-8"
+      className="bg-white rounded-xl shadow-xl p-8"
       initial={{ opacity: 0, x: 50 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
