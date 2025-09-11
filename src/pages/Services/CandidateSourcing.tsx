@@ -13,6 +13,7 @@ const CandidateSourcing = () => {
   
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     if (isHeroInView) {
       heroControls.start("visible");
     }

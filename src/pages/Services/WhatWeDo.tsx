@@ -7,7 +7,7 @@ import {
   FaChartLine, FaGlobe, FaHeadset, FaUserTie,
   FaBriefcase, FaCalendarAlt, FaCheckCircle, 
 } from 'react-icons/fa';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
@@ -27,6 +27,10 @@ const WhatWeDo = () => {
     businessName: "",
     phone: "",
   });
+  useEffect(() => {
+      // Reset scroll position when this page mounts
+      window.scrollTo(0, 0);
+    }, []);
   
   const [status, setStatus] = useState("");
   const handleSubmit = async (e: React.FormEvent) => {

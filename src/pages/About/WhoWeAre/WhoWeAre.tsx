@@ -5,8 +5,13 @@ import OurStorySection from './OurStorySection'
 import SharedValuesSection from './SharedValuesSection'
 import OurPurposeSection from './OurPurposeSection'
 import WhatMakesUsSection from './WhatMakesUsSection'
+import { useEffect } from 'react'
 
 function WhoWeAre() {
+  useEffect(() => {
+      // Reset scroll position when this page mounts
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div className="font-sans">
       <HeroSection/>

@@ -184,6 +184,7 @@ const industriesRow2 = [
 
 
     useEffect(() => {
+        window.scrollTo(0, 0);
     if (!containerRef.current || isPaused) return;
 
     const container = containerRef.current;
