@@ -8,16 +8,19 @@ const Contact: React.FC = () => {
   const parallaxRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (parallaxRef.current) {
-        const scrollY = window.scrollY;
-        // parallaxRef.current.style.transform = translateY(${scrollY * 0.3}px);
-      }
-    };
+  // Scroll to top when page loads
+  window.scrollTo(0, 0);
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const handleScroll = () => {
+    if (parallaxRef.current) {
+      const scrollY = window.scrollY;
+      // parallaxRef.current.style.transform = translateY(${scrollY * 0.3}px);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
